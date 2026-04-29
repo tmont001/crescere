@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   DESIGN TOKENS
+   Approachable, premium, structured.
+   ============================================ */
+
+@layer base {
+  :root {
+    /* Surfaces — Aurora cream, harmonizes with deep navy ink and blue accents */
+    --color-paper: 255 251 242;        /* #FFFBF2 Aurora Surface Cream */
+    --color-paper-raised: 255 253 248; /* #FFFDF8 lifted surface */
+    --color-paper-sunken: 244 238 223; /* #F4EEDF recessed */
+
+    /* Text — Aurora Deep Navy */
+    --color-ink: 26 40 71;             /* #1A2847 Aurora Deep Navy */
+    --color-ink-muted: 74 88 118;      /* #4A5876 */
+    --color-ink-subtle: 140 150 170;   /* #8C96AA */
+
+    /* Accent — Aurora Primary Blue. Matches the logo globe. */
+    --color-accent: 61 110 232;        /* #3D6EE8 Aurora Primary Blue */
+    --color-accent-hover: 45 86 194;   /* #2D56C2 */
+    --color-accent-soft: 225 233 252;  /* #E1E9FC pale blue wash */
+
+    /* Highlight — Aurora Accent Coral. Urgency, errors, "areas to improve". */
+    --color-highlight: 255 138 91;     /* #FF8A5B Aurora Accent Coral */
+    --color-highlight-soft: 255 226 212; /* #FFE2D4 soft coral tint */
+
+    /* Structural */
+    --color-line: 232 224 204;         /* #E8E0CC hairline on cream */
+
+    /* Motion */
+    --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .dark {
+    /* Deep navy surfaces — derived from Aurora Deep Navy */
+    --color-paper: 16 26 48;           /* #101A30 deeper than ink for surface */
+    --color-paper-raised: 26 40 71;    /* #1A2847 Aurora Deep Navy */
+    --color-paper-sunken: 10 18 36;    /* #0A1224 */
+
+    --color-ink: 255 251 242;          /* #FFFBF2 Aurora cream on dark */
+    --color-ink-muted: 186 196 216;    /* #BAC4D8 */
+    --color-ink-subtle: 118 130 156;   /* #76829C */
+
+    /* Accent — Highlight Gold on dark. On deep navy, gold is the legible brand color. */
+    --color-accent: 255 200 69;        /* #FFC845 Aurora Highlight Gold */
+    --color-accent-hover: 255 213 110; /* #FFD56E */
+    --color-accent-soft: 60 46 20;     /* #3C2E14 deep gold wash */
+
+    /* Highlight — Accent Coral, slightly lifted for dark surfaces */
+    --color-highlight: 255 158 117;    /* #FF9E75 */
+    --color-highlight-soft: 74 42 28;  /* #4A2A1C */
+
+    --color-line: 46 62 96;            /* #2E3E60 */
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  /* Numerics: tabular for prices, dates, counts */
+  .tabular {
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-accent text-paper;
+  }
+
+  /* Focus rings — consistent across the app */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-paper;
+  }
+
+  /* Scrollbar — subtle, matches the aesthetic */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-paper;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-line rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-subtle;
+  }
+}
+
+@layer components {
+  /* Container with editorial max width */
+  .container-editorial {
+    @apply mx-auto px-6 sm:px-8 lg:px-12;
+    max-width: 1280px;
+  }
+
+  .container-narrow {
+    @apply mx-auto px-6 sm:px-8;
+    max-width: 768px;
+  }
+
+  /* Eyebrow label — small caps for section headers */
+  .eyebrow {
+    @apply text-2xs uppercase tracking-[0.18em] font-medium text-ink-muted;
+  }
+
+  /* Display headlines */
+  .display-1 {
+    @apply font-display font-light tracking-tightest;
+    font-size: clamp(2.5rem, 5.5vw, 4.75rem);
+    line-height: 1.02;
+  }
+
+  .display-2 {
+    @apply font-display font-light tracking-tightest;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.05;
+  }
+
+  .display-3 {
+    @apply font-display font-normal tracking-tight;
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    line-height: 1.15;
+  }
+
+  /* Hairline divider */
+  .hairline {
+    @apply border-t border-line;
+  }
+
+  /* Subtle paper texture — noise overlay */
+  .paper-texture {
+    position: relative;
+  }
+  .paper-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-reveal {
+    animation: reveal 0.8s var(--ease-editorial) forwards;
+    opacity: 0;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
