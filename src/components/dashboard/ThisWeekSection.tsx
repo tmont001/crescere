@@ -50,9 +50,9 @@ export function ThisWeekSection({ course }: { course: DashboardCourse }) {
             · Week {String(course.currentWeek).padStart(2, '0')}
           </span>
         </div>
-        <button className="text-sm text-ink-muted hover:text-ink transition-colors">
+        <span className="text-sm text-ink-subtle select-none">
           View all weeks →
-        </button>
+        </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

@@ -3,6 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import { BookOpenCheck, Users, FolderOpen, User, Menu, X, LogOut } from 'lucide-react';
 import { Logo } from '@/components/layout/Logo';
 import { ThemeToggle } from '@/components/ui';
+import { useUser } from '@/context/UserContext';
 import { cn } from '@/lib/cn';
 
 interface DashboardLayoutProps {
@@ -19,6 +20,7 @@ const NAV_ITEMS = [
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const { name, email, initials } = useUser();
 
   // Close the mobile drawer whenever the route changes
   useEffect(() => {
@@ -100,12 +102,12 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <div className="p-6 border-t border-line">
             <div className="flex items-center gap-3">
               <div className="h-9 w-9 rounded-full bg-accent flex items-center justify-center shrink-0">
-                <span className="font-display text-sm text-paper">JD</span>
+                <span className="font-display text-sm text-paper">{initials}</span>
               </div>
               <div className="min-w-0">
-                <p className="text-sm font-medium text-ink truncate">Jordan Doe</p>
+                <p className="text-sm font-medium text-ink truncate">{name}</p>
                 <p className="text-2xs uppercase tracking-wider text-ink-subtle truncate">
-                  jordan@example.com
+                  {email}
                 </p>
               </div>
             </div>

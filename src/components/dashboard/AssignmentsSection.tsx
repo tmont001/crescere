@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Check, Clock, Mic, PenLine, BookOpen, Upload, ArrowRight } from 'lucide-react';
 import { Badge, Button, Textarea } from '@/components/ui';
 import { ASSIGNMENTS } from '@/data/dashboardMock';
@@ -54,10 +54,12 @@ function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast
   const [expanded, setExpanded] = useState(false);
   const [submission, setSubmission] = useState('');
   const [submitted, setSubmitted] = useState(assignment.status !== 'pending');
+  const [fileName, setFileName] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const Icon = TYPE_ICONS[assignment.type];
 
   function handleSubmit() {
-    if (!submission.trim()) return;
+    if (!submission.trim() && !fileName) return;
     setSubmitted(true);
     setExpanded(false);
   }
@@ -68,12 +70,15 @@ function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast
         type="button"
         onClick={() => assignment.status === 'pending' && setExpanded((v) => !v)}
         className={cn(
-          'w-full grid grid-cols-12 items-center gap-4 p-5 text-left',
+          'w-full p-5 text-left',
+          'flex items-start gap-4',
+          'md:grid md:grid-cols-12 md:items-center md:gap-4',
           assignment.status === 'pending' && 'hover:bg-paper cursor-pointer',
           assignment.status !== 'pending' && 'cursor-default',
         )}
       >
-        <div className="col-span-1">
+        {/* Status icon — shrink-0 on mobile, col-span-1 on desktop */}
+        <div className="shrink-0 md:col-span-1">
           <div
             className={cn(
               'h-9 w-9 rounded flex items-center justify-center border',
@@ -86,34 +91,46 @@ function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast
           </div>
         </div>
 
-        <div className="col-span-11 md:col-span-7">
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-2xs uppercase tracking-wider text-ink-subtle">Week {assignment.week}</span>
-            <Badge variant="outline" size="sm">
-              {assignment.type}
-            </Badge>
+        {/*
+          Wrapper: flex column on mobile (title above, date+status below).
+          md:contents removes the box on desktop so children join the grid directly.
+        */}
+        <div className="flex-1 min-w-0 flex flex-col gap-2 md:contents">
+          {/* Title block */}
+          <div className="md:col-span-7">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-2xs uppercase tracking-wider text-ink-subtle">Week {assignment.week}</span>
+              <Badge variant="outline" size="sm">
+                {assignment.type}
+              </Badge>
+            </div>
+            <p className="font-medium text-ink">{assignment.title}</p>
+            {!expanded && (
+              <p className="text-sm text-ink-muted mt-1 line-clamp-1">{assignment.description}</p>
+            )}
           </div>
-          <p className="font-medium text-ink">{assignment.title}</p>
-          {!expanded && (
-            <p className="text-sm text-ink-muted mt-1 line-clamp-1">{assignment.description}</p>
-          )}
-        </div>
 
-        <div className="col-span-6 md:col-span-2 flex items-center gap-1.5 text-sm text-ink-muted">
-          <Clock size={12} strokeWidth={1.5} />
-          <span className="tabular">{formatShortDate(assignment.dueDate)}</span>
-        </div>
-
-        <div className="col-span-6 md:col-span-2 flex md:justify-end">
-          {submitted ? (
-            <Badge variant="accent" size="sm">
-              {assignment.status === 'graded' ? 'Graded' : 'Submitted'}
-            </Badge>
-          ) : (
-            <Badge variant="highlight" size="sm">
-              Pending
-            </Badge>
-          )}
+          {/*
+            Date + status: flex row on mobile (space-between), contents on desktop
+            so each child becomes its own grid cell.
+          */}
+          <div className="flex items-center justify-between md:contents">
+            <div className="flex items-center gap-1.5 text-sm text-ink-muted md:col-span-2">
+              <Clock size={12} strokeWidth={1.5} />
+              <span className="tabular">{formatShortDate(assignment.dueDate)}</span>
+            </div>
+            <div className="md:col-span-2 md:flex md:justify-end">
+              {submitted ? (
+                <Badge variant="accent" size="sm">
+                  {assignment.status === 'graded' ? 'Graded' : 'Submitted'}
+                </Badge>
+              ) : (
+                <Badge variant="highlight" size="sm">
+                  Pending
+                </Badge>
+              )}
+            </div>
+          </div>
         </div>
       </button>
 
@@ -133,18 +150,28 @@ function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast
               <Button
                 size="md"
                 onClick={handleSubmit}
-                disabled={!submission.trim()}
+                disabled={!submission.trim() && !fileName}
                 icon={<ArrowRight size={14} strokeWidth={1.5} />}
               >
                 Submit
               </Button>
               <button
                 type="button"
+                onClick={() => fileInputRef.current?.click()}
                 className="inline-flex items-center justify-center gap-2 px-5 h-11 text-sm text-ink-muted hover:text-ink border border-line rounded transition-colors"
               >
                 <Upload size={14} strokeWidth={1.5} />
-                Upload file instead
+                {fileName ?? 'Upload file instead'}
               </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                className="sr-only"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) setFileName(file.name);
+                }}
+              />
             </div>
           </div>
         </div>

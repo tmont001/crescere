@@ -85,9 +85,14 @@ export function ResourcesPage() {
 
 function ResourceItem({ resource }: { resource: Resource }) {
   const Icon = TYPE_ICONS[resource.type];
+  const isPlaceholder = resource.url === '#';
   return (
     <Card variant="default" interactive className="p-5 group">
-      <button type="button" className="text-left w-full flex items-start gap-4">
+      <a
+        href={resource.url}
+        {...(!isPlaceholder && { target: '_blank', rel: 'noreferrer noopener' })}
+        className="text-left w-full flex items-start gap-4"
+      >
         <div
           className={cn(
             'h-10 w-10 shrink-0 rounded flex items-center justify-center border transition-colors',
@@ -105,7 +110,7 @@ function ResourceItem({ resource }: { resource: Resource }) {
           <p className="font-medium text-ink mb-1">{resource.title}</p>
           <p className="text-sm text-ink-muted leading-relaxed">{resource.description}</p>
         </div>
-      </button>
+      </a>
     </Card>
   );
 }

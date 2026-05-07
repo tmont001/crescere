@@ -2,14 +2,16 @@ import { useState } from 'react';
 import { Bell, Moon, Globe, Check } from 'lucide-react';
 import { Card, Input, Button, Badge } from '@/components/ui';
 import { useTheme } from '@/context/ThemeContext';
+import { useUser } from '@/context/UserContext';
 import { DASHBOARD_COURSES } from '@/data/dashboardMock';
 import { cn } from '@/lib/cn';
 
 export function ProfilePage() {
   const { theme, toggle } = useTheme();
-  const [name, setName] = useState('Jordan Doe');
-  const [email, setEmail] = useState('jordan@example.com');
-  const [timezone, setTimezone] = useState('America/New_York');
+  const { name: userName, email: userEmail, timezone: userTimezone, updateUser } = useUser();
+  const [name, setName] = useState(userName);
+  const [email, setEmail] = useState(userEmail);
+  const [timezone, setTimezone] = useState(userTimezone);
   const [emailReminders, setEmailReminders] = useState(true);
   const [sessionReminders, setSessionReminders] = useState(true);
   const [communityDigest, setCommunityDigest] = useState(false);
@@ -17,6 +19,7 @@ export function ProfilePage() {
 
   function handleSave(e: React.FormEvent) {
     e.preventDefault();
+    updateUser({ name, email, timezone });
     setSaved(true);
     setTimeout(() => setSaved(false), 2400);
   }

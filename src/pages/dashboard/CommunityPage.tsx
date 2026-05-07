@@ -3,6 +3,7 @@ import { Send } from 'lucide-react';
 import { Card, Textarea, Button, Badge } from '@/components/ui';
 import { PostCard } from '@/components/dashboard/PostCard';
 import { COMMUNITY_POSTS, DASHBOARD_COURSES } from '@/data/dashboardMock';
+import { useUser } from '@/context/UserContext';
 import { cn } from '@/lib/cn';
 import type { CommunityPost } from '@/types';
 
@@ -18,6 +19,7 @@ const CURRENT_PROMPT = 'Share a situation this week where you used your target l
 
 export function CommunityPage() {
   const primaryLanguage = DASHBOARD_COURSES[0]?.language ?? 'spanish';
+  const { name } = useUser();
 
   const [filter, setFilter] = useState<FilterId>('all');
   const [draft, setDraft] = useState('');
@@ -29,7 +31,7 @@ export function CommunityPage() {
     if (!draft.trim()) return;
     const newPost: CommunityPost = {
       id: `p-${Date.now()}`,
-      author: 'Jordan Doe',
+      author: name,
       authorRole: 'Spanish A2 · Cohort 14',
       prompt: CURRENT_PROMPT,
       content: draft,
