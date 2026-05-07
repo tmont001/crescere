@@ -23,13 +23,13 @@ export function EntryScreen({ onStart }: EntryScreenProps) {
           <span className="italic font-normal text-accent">starting point.</span>
         </h1>
         <p className="text-lg text-ink-muted leading-relaxed max-w-xl mx-auto">
-          Fourteen adaptive questions across grammar, vocabulary, tense usage, and reading. You'll get a CEFR level (A1–C1), a per-category breakdown, and a recommended next step.
+          Five parts across grammar, vocabulary, reading, writing, and speaking. You'll get a CEFR level (A1–C1), a per-category breakdown, and a recommended next step.
         </p>
       </div>
 
       <div className="grid grid-cols-3 gap-4 mb-10">
-        <InfoCell icon={<Clock size={16} strokeWidth={1.5} />} label="Duration" value="7 min" />
-        <InfoCell icon={<Zap size={16} strokeWidth={1.5} />} label="Questions" value="14" />
+        <InfoCell icon={<Clock size={16} strokeWidth={1.5} />} label="Duration" value="~25 min" />
+        <InfoCell icon={<Zap size={16} strokeWidth={1.5} />} label="Format" value="5 parts" />
         <InfoCell icon={<Users size={16} strokeWidth={1.5} />} label="Login" value="Not required" />
       </div>
 

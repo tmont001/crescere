@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Check, Mail, RotateCcw } from 'lucide-react';
+import { ArrowRight, Check, Clock, Mail, RotateCcw } from 'lucide-react';
 import { Card, Badge, Button, ButtonLink, Input } from '@/components/ui';
 import { getCourseById } from '@/data/courses';
 import { getNextCohortForCourse } from '@/data/cohorts';
@@ -170,6 +170,27 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
           </div>
         )}
       </Card>
+
+      {/* Review-pending notice — shown when writing or voice was submitted */}
+      {result.reviewNeeded && (
+        <Card variant="default" className="p-6 mb-6 border border-accent/30">
+          <div className="flex items-start gap-3">
+            <div className="shrink-0 h-8 w-8 rounded-full bg-accent-soft flex items-center justify-center">
+              <Clock size={14} strokeWidth={1.5} className="text-accent" />
+            </div>
+            <div>
+              <p className="font-display text-base text-ink mb-1">Review in progress</p>
+              <p className="text-sm text-ink-muted leading-relaxed">
+                Your{' '}
+                {result.reviewSections.join(' and ')}{' '}
+                {result.reviewSections.length === 1 ? 'submission has' : 'submissions have'} been
+                saved for teacher review. The CEFR level above reflects your auto-scored results
+                and may be refined after review.
+              </p>
+            </div>
+          </div>
+        </Card>
+      )}
 
       {/* Recommendation — branches on whether we have a matching cohort course */}
       {course ? (

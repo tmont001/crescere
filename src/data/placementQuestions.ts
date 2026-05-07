@@ -1,28 +1,28 @@
-import type { PlacementQuestion } from '@/types';
+import type { FillInQuestion, Language, MCQuestion, ReadingPassage } from '@/types';
 
 /**
- * Question banks are intentionally distinct between French and Spanish.
- * Each language draws on its own vocabulary, idioms, cultural context,
- * and grammar patterns rather than mirroring the other.
+ * Question banks for all five placement test parts.
+ *
+ * Part 1 — MCQuestion (section: 1): 24 questions per language, adaptive MC.
+ * Part 2 — FillInQuestion (section: 2): 8 questions per language, typed answers.
+ * Part 3 — ReadingPassage (section: 3): 2 passages per language with grouped MC.
+ *
+ * Parts 4–5 have no question bank (writing prompt is a constant; voice is open-ended).
  *
  * Difficulty scale (anchored to CEFR):
  *   1 = A1   2 = A2   3 = B1   4 = B2   5 = C1
- *
- * Categories surface in the results breakdown. Keep them aligned with
- * PlacementCategory in src/types.
  */
 
 // ---------------------------------------------------------------------------
-// FRENCH — drawn from French daily life (Paris, Lyon, café culture, métro,
-// rentrée, etc.) with French-specific grammar pain points: gender of nouns,
-// passé composé vs imparfait, COD/COI pronouns, subjunctive after il faut que,
-// register and idiomatic expressions.
+// PART 1 — FRENCH MC (section 1)
+// French daily life: Paris, café culture, métro, grammar pain points.
 // ---------------------------------------------------------------------------
-export const FRENCH_QUESTIONS: PlacementQuestion[] = [
+export const FRENCH_QUESTIONS: MCQuestion[] = [
   // ============= A1 (difficulty 1) =============
   {
     id: 'fr-1',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 1,
@@ -33,6 +33,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-2',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 1,
@@ -43,6 +44,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-3',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'grammar',
     difficulty: 1,
@@ -53,6 +55,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-4',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 1,
@@ -65,6 +68,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-5',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 2,
@@ -75,6 +79,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-6',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 2,
@@ -90,6 +95,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-7',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'prepositions',
     difficulty: 2,
@@ -100,6 +106,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-8',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 2,
@@ -117,6 +124,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-9',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 3,
@@ -133,6 +141,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-10',
     language: 'french',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 3,
@@ -150,10 +159,11 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-11',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'pronouns',
     difficulty: 3,
-    prompt: "Replace the underlined words: \"J'ai donné le cadeau __à Sophie__.\"",
+    prompt: "Replace the underlined words: \"J'ai donné le cadeau __à Sophie__.",
     options: [
       'Je le lui ai donné.',
       "Je l'ai lui donné.",
@@ -165,6 +175,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-12',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 3,
@@ -180,6 +191,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-13',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'prepositions',
     difficulty: 3,
@@ -192,6 +204,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-14',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 4,
@@ -202,6 +215,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-15',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 4,
@@ -217,6 +231,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-16',
     language: 'french',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 4,
@@ -234,6 +249,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-17',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 4,
@@ -249,6 +265,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-18',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'pronouns',
     difficulty: 4,
@@ -262,6 +279,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-19',
     language: 'french',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 5,
@@ -279,6 +297,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-20',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 5,
@@ -294,6 +313,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-21',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 5,
@@ -309,6 +329,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-22',
     language: 'french',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 5,
@@ -325,6 +346,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-23',
     language: 'french',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 5,
@@ -335,6 +357,7 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'fr-24',
     language: 'french',
+    section: 1,
     type: 'reading',
     category: 'real-world-usage',
     difficulty: 5,
@@ -352,15 +375,16 @@ export const FRENCH_QUESTIONS: PlacementQuestion[] = [
 ];
 
 // ---------------------------------------------------------------------------
-// SPANISH — anchored in Spain and Latin America: tapas, sobremesa, quedar,
-// preterite vs imperfect, ser vs estar, por vs para, leísmo notes, formal
-// usted, common idioms. Examples and phrasings are independent from French.
+// PART 1 — SPANISH MC (section 1)
+// Anchored in Spain and Latin America: ser/estar, por/para, subjunctive,
+// preterite vs imperfect, common idioms.
 // ---------------------------------------------------------------------------
-export const SPANISH_QUESTIONS: PlacementQuestion[] = [
+export const SPANISH_QUESTIONS: MCQuestion[] = [
   // ============= A1 (difficulty 1) =============
   {
     id: 'es-1',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'grammar',
     difficulty: 1,
@@ -371,6 +395,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-2',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 1,
@@ -381,6 +406,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-3',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'grammar',
     difficulty: 1,
@@ -391,6 +417,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-4',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 1,
@@ -408,6 +435,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-5',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'grammar',
     difficulty: 2,
@@ -418,6 +446,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-6',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 2,
@@ -433,6 +462,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-7',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'prepositions',
     difficulty: 2,
@@ -443,6 +473,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-8',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 2,
@@ -460,6 +491,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-9',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 3,
@@ -471,6 +503,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-10',
     language: 'spanish',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 3,
@@ -488,6 +521,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-11',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'pronouns',
     difficulty: 3,
@@ -498,6 +532,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-12',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 3,
@@ -506,13 +541,14 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
       'If you can stay until eight',
       'If you want to meet up at eight',
       'If you are free at eight',
-      'If it is already eight o\'clock',
+      "If it is already eight o'clock",
     ],
     correctIndex: 1,
   },
   {
     id: 'es-13',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 3,
@@ -525,6 +561,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-14',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 4,
@@ -535,6 +572,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-15',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 4,
@@ -550,6 +588,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-16',
     language: 'spanish',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 4,
@@ -567,6 +606,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-17',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 4,
@@ -582,6 +622,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-18',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'pronouns',
     difficulty: 4,
@@ -599,6 +640,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-19',
     language: 'spanish',
+    section: 1,
     type: 'reading',
     category: 'reading',
     difficulty: 5,
@@ -616,6 +658,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-20',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'real-world-usage',
     difficulty: 5,
@@ -631,6 +674,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-21',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'verb-tense',
     difficulty: 5,
@@ -646,6 +690,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-22',
     language: 'spanish',
+    section: 1,
     type: 'grammar',
     category: 'sentence-structure',
     difficulty: 5,
@@ -661,6 +706,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-23',
     language: 'spanish',
+    section: 1,
     type: 'vocabulary',
     category: 'vocabulary',
     difficulty: 5,
@@ -676,6 +722,7 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   {
     id: 'es-24',
     language: 'spanish',
+    section: 1,
     type: 'reading',
     category: 'real-world-usage',
     difficulty: 5,
@@ -692,6 +739,498 @@ export const SPANISH_QUESTIONS: PlacementQuestion[] = [
   },
 ];
 
-export function getPlacementQuestions(language: 'french' | 'spanish'): PlacementQuestion[] {
+// ---------------------------------------------------------------------------
+// PART 2 — FRENCH FILL-IN (section 2)
+// 8 questions, 2 per difficulty 1–4. correctAnswer is pre-lowercased.
+// Levenshtein tolerance (distance ≤ 1) applies when correctAnswer.length ≥ 5.
+// ---------------------------------------------------------------------------
+export const FRENCH_FILL_IN_QUESTIONS: FillInQuestion[] = [
+  // ===== A1 (difficulty 1) =====
+  {
+    id: 'fr-fill-1',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'verb-tense',
+    difficulty: 1,
+    prompt: 'Complete: "Elle ___ seize ans."',
+    correctAnswer: 'a',
+  },
+  {
+    id: 'fr-fill-2',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'grammar',
+    difficulty: 1,
+    prompt: "Complete: \"C'est ___ idée formidable !\"",
+    correctAnswer: 'une',
+  },
+
+  // ===== A2 (difficulty 2) =====
+  {
+    id: 'fr-fill-3',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'prepositions',
+    difficulty: 2,
+    prompt: 'Complete: "Je vais ___ États-Unis en août."',
+    correctAnswer: 'aux',
+  },
+  {
+    id: 'fr-fill-4',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'verb-tense',
+    difficulty: 2,
+    prompt: 'Complete: "Il ___ du café tous les matins avant de partir."',
+    correctAnswer: 'boit',
+  },
+
+  // ===== B1 (difficulty 3) =====
+  {
+    id: 'fr-fill-5',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'pronouns',
+    difficulty: 3,
+    prompt: 'Complete: "La ville ___ je vous ai parlé la semaine dernière s\'appelle Bordeaux."',
+    correctAnswer: 'dont',
+  },
+  {
+    id: 'fr-fill-6',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'sentence-structure',
+    difficulty: 3,
+    prompt: 'Complete: "Il faut ___ tu arrives à l\'heure pour la réunion."',
+    correctAnswer: 'que',
+  },
+
+  // ===== B2 (difficulty 4) =====
+  {
+    id: 'fr-fill-7',
+    language: 'french',
+    section: 2,
+    type: 'grammar',
+    category: 'verb-tense',
+    difficulty: 4,
+    prompt: 'Complete: "Si nous ___ su, nous n\'aurions jamais accepté cette proposition."',
+    correctAnswer: 'avions',
+  },
+  {
+    id: 'fr-fill-8',
+    language: 'french',
+    section: 2,
+    type: 'vocabulary',
+    category: 'vocabulary',
+    difficulty: 4,
+    prompt: 'Complete: "Après des semaines de négociations, les deux parties ont trouvé un ___."',
+    correctAnswer: 'accord',
+  },
+];
+
+// ---------------------------------------------------------------------------
+// PART 2 — SPANISH FILL-IN (section 2)
+// ---------------------------------------------------------------------------
+export const SPANISH_FILL_IN_QUESTIONS: FillInQuestion[] = [
+  // ===== A1 (difficulty 1) =====
+  {
+    id: 'es-fill-1',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'grammar',
+    difficulty: 1,
+    prompt: 'Complete: "Ella ___ estudiante de medicina en la Universidad de Barcelona."',
+    correctAnswer: 'es',
+  },
+  {
+    id: 'es-fill-2',
+    language: 'spanish',
+    section: 2,
+    type: 'vocabulary',
+    category: 'real-world-usage',
+    difficulty: 1,
+    prompt: 'Complete: "Buenos días. ¿Cómo ___ usted hoy?"',
+    correctAnswer: 'está',
+  },
+
+  // ===== A2 (difficulty 2) =====
+  {
+    id: 'es-fill-3',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'grammar',
+    difficulty: 2,
+    prompt: 'Complete: "Mi café ___ frío cuando por fin lo probé."',
+    correctAnswer: 'estaba',
+  },
+  {
+    id: 'es-fill-4',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'prepositions',
+    difficulty: 2,
+    prompt: 'Complete: "Este regalo es ___ mi madre; lo compré ayer."',
+    correctAnswer: 'para',
+  },
+
+  // ===== B1 (difficulty 3) =====
+  {
+    id: 'es-fill-5',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'verb-tense',
+    difficulty: 3,
+    prompt: 'Complete: "Cuando era niño, siempre ___ al parque con mis amigos."',
+    correctAnswer: 'iba',
+  },
+  {
+    id: 'es-fill-6',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'pronouns',
+    difficulty: 3,
+    prompt: 'Complete: "Le compré las flores a María; se ___ di ayer por la tarde."',
+    correctAnswer: 'las',
+  },
+
+  // ===== B2 (difficulty 4) =====
+  {
+    id: 'es-fill-7',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'verb-tense',
+    difficulty: 4,
+    prompt: 'Complete: "Si ___ más tiempo libre, iría contigo al concierto este fin de semana."',
+    correctAnswer: 'tuviera',
+    // "tuvieras" is accepted in voseo dialects
+    acceptedAlternatives: ['tuvieras'],
+  },
+  {
+    id: 'es-fill-8',
+    language: 'spanish',
+    section: 2,
+    type: 'grammar',
+    category: 'sentence-structure',
+    difficulty: 4,
+    prompt: 'Complete: "Es fundamental que los alumnos ___ a clase a tiempo."',
+    correctAnswer: 'lleguen',
+  },
+];
+
+// ---------------------------------------------------------------------------
+// PART 3 — FRENCH READING PASSAGES (section 3)
+// Two passages: one B1, one B2. Questions are grouped MC within the passage.
+// ---------------------------------------------------------------------------
+export const FRENCH_READING_PASSAGES: ReadingPassage[] = [
+  {
+    id: 'fr-passage-1',
+    language: 'french',
+    section: 3,
+    difficulty: 3,
+    passageText:
+      "Depuis quelques années, le télétravail s'est imposé dans de nombreuses entreprises françaises. Certains salariés apprécient cette flexibilité : plus besoin de prendre le métro aux heures de pointe, et la possibilité de s'organiser à leur guise. D'autres, en revanche, trouvent difficile de séparer vie professionnelle et vie personnelle lorsque le bureau est installé dans leur salon.",
+    questions: [
+      {
+        id: 'fr-p1-q1',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'What do some employees appreciate about remote work?',
+        options: [
+          'Having a larger workspace',
+          'Avoiding the metro commute during rush hour',
+          'Receiving a higher salary',
+          'Working alongside international colleagues',
+        ],
+        correctIndex: 1,
+      },
+      {
+        id: 'fr-p1-q2',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'What challenge do some remote workers face?',
+        options: [
+          'Learning new software tools',
+          'Managing tight deadlines',
+          'Separating professional and personal life',
+          'Finding a quiet environment',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'fr-p1-q3',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'What is the main idea of the passage?',
+        options: [
+          'French companies are facing serious financial difficulties.',
+          'Remote work has both benefits and drawbacks for employees.',
+          'The Paris metro is too crowded during rush hour.',
+          'Most French workers prefer to stay in the office.',
+        ],
+        correctIndex: 1,
+      },
+    ],
+  },
+  {
+    id: 'fr-passage-2',
+    language: 'french',
+    section: 3,
+    difficulty: 4,
+    passageText:
+      "La langue française, souvent perçue comme rigoureuse et codifiée, est en réalité bien plus dynamique qu'on ne le croit. Chaque génération y apporte ses néologismes, ses emprunts à l'anglais, ses raccourcis de l'oral. L'Académie française, gardienne officielle de la norme, tente de réguler ces évolutions — non sans susciter des débats passionnés sur la nécessité de préserver la langue.",
+    questions: [
+      {
+        id: 'fr-p2-q1',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'What does the passage imply about the French language?',
+        options: [
+          'It is a declining language that urgently needs protection.',
+          'It is more dynamic and evolving than commonly assumed.',
+          'It should adopt more English words to remain relevant.',
+          'The Académie française has fully standardised it.',
+        ],
+        correctIndex: 1,
+      },
+      {
+        id: 'fr-p2-q2',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'What role does the Académie française play?',
+        options: [
+          'It publishes a new dictionary every year.',
+          'It runs language schools across France.',
+          'It tries to regulate changes to the language.',
+          'It approves new words from social media.',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'fr-p2-q3',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'vocabulary',
+        difficulty: 4,
+        prompt: 'In this context, "néologismes" most likely means:',
+        options: [
+          'Old-fashioned expressions that have been revived',
+          'Grammatical errors gradually accepted as correct',
+          'New words or expressions created by each generation',
+          'Terms borrowed directly from Latin',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'fr-p2-q4',
+        language: 'french',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'What passionate debates does the passage mention?',
+        options: [
+          'Whether French should be the sole language of the EU',
+          'Whether language evolution threatens or enriches French',
+          'Whether the Académie française should be abolished',
+          'Whether English words should be banned from French media',
+        ],
+        correctIndex: 1,
+      },
+    ],
+  },
+];
+
+// ---------------------------------------------------------------------------
+// PART 3 — SPANISH READING PASSAGES (section 3)
+// ---------------------------------------------------------------------------
+export const SPANISH_READING_PASSAGES: ReadingPassage[] = [
+  {
+    id: 'es-passage-1',
+    language: 'spanish',
+    section: 3,
+    difficulty: 3,
+    passageText:
+      'En muchas ciudades españolas, la bicicleta se está convirtiendo en un medio de transporte cada vez más popular. Varios ayuntamientos han invertido en carriles bici y sistemas de préstamo municipal. Sin embargo, algunos ciudadanos siguen prefiriendo el coche por comodidad, especialmente cuando tienen que hacer trayectos largos o llevar compras pesadas.',
+    questions: [
+      {
+        id: 'es-p1-q1',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'What trend does the passage describe?',
+        options: [
+          'The decline of public transport in Spain',
+          'The growing popularity of cycling in Spanish cities',
+          'Conflict between cyclists and car drivers',
+          'Government plans to ban cars from city centres',
+        ],
+        correctIndex: 1,
+      },
+      {
+        id: 'es-p1-q2',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'What have local councils done to encourage cycling?',
+        options: [
+          'Built new roads for cars',
+          'Introduced free public transport',
+          'Invested in bike lanes and rental systems',
+          'Banned bikes from certain areas',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'es-p1-q3',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 3,
+        prompt: 'Why do some people still prefer cars?',
+        options: [
+          'Cars are cheaper than bicycles in Spain',
+          'Cycling infrastructure is still very limited',
+          'They prefer car culture for social reasons',
+          'They need them for long trips or carrying heavy shopping',
+        ],
+        correctIndex: 3,
+      },
+    ],
+  },
+  {
+    id: 'es-passage-2',
+    language: 'spanish',
+    section: 3,
+    difficulty: 4,
+    passageText:
+      'La economía circular propone un modelo donde los residuos de un proceso productivo se convierten en recursos para otro. A diferencia del modelo lineal — producir, usar, desechar —, este enfoque busca cerrar el ciclo y reducir el impacto ambiental. Aunque varias empresas europeas han comenzado a adoptarlo, su implementación a gran escala sigue siendo un reto considerable.',
+    questions: [
+      {
+        id: 'es-p2-q1',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'What does the circular economy model propose?',
+        options: [
+          'Producing more goods with fewer workers',
+          'Recycling only plastic and glass materials',
+          'Converting waste from one process into resources for another',
+          'Banning non-renewable energy sources',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'es-p2-q2',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'How does the circular model differ from the linear model?',
+        options: [
+          'It uses more energy but produces less waste',
+          'It aims to close the production cycle rather than discard at the end',
+          'It relies entirely on renewable energy',
+          'It produces goods more quickly and cheaply',
+        ],
+        correctIndex: 1,
+      },
+      {
+        id: 'es-p2-q3',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'reading',
+        difficulty: 4,
+        prompt: 'What challenge does the passage mention?',
+        options: [
+          'Finding companies willing to try the model',
+          'Convincing governments to fund the transition',
+          'Implementing the circular economy at large scale',
+          'Making it cost-competitive with traditional manufacturing',
+        ],
+        correctIndex: 2,
+      },
+      {
+        id: 'es-p2-q4',
+        language: 'spanish',
+        section: 3,
+        type: 'reading',
+        category: 'vocabulary',
+        difficulty: 4,
+        prompt: '"Desechar" in this context most likely means:',
+        options: [
+          'To recycle carefully',
+          'To store for later use',
+          'To throw away / discard',
+          'To sell to other companies',
+        ],
+        correctIndex: 2,
+      },
+    ],
+  },
+];
+
+// ---------------------------------------------------------------------------
+// PART 4 — WRITING PROMPTS
+// One per language. No bank needed — the prompt is a constant.
+// ---------------------------------------------------------------------------
+export const WRITING_PROMPTS: Record<Language, string> = {
+  french: `Décrivez un endroit où vous aimez passer du temps libre. Qu'est-ce qui le rend spécial pour vous ? (5–8 phrases)`,
+  spanish: `Describe un lugar donde te gusta pasar tu tiempo libre. ¿Qué lo hace especial para ti? (5–8 frases)`,
+};
+
+// ---------------------------------------------------------------------------
+// Accessors
+// ---------------------------------------------------------------------------
+
+export function getPlacementQuestions(language: Language): MCQuestion[] {
   return language === 'french' ? FRENCH_QUESTIONS : SPANISH_QUESTIONS;
+}
+
+export function getFillInQuestions(language: Language): FillInQuestion[] {
+  return language === 'french' ? FRENCH_FILL_IN_QUESTIONS : SPANISH_FILL_IN_QUESTIONS;
+}
+
+export function getReadingPassages(language: Language): ReadingPassage[] {
+  return language === 'french' ? FRENCH_READING_PASSAGES : SPANISH_READING_PASSAGES;
+}
+
+export function getWritingPrompt(language: Language): string {
+  return WRITING_PROMPTS[language];
 }
