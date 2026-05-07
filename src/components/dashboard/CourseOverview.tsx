@@ -21,7 +21,7 @@ export function CourseOverview({ course }: { course: DashboardCourse }) {
           </div>
           <h1 className="display-2 text-ink mb-2">{course.name}</h1>
           <p className="text-ink-muted">
-            Week <span className="tabular text-ink font-medium">{course.currentWeek}</span> of <span className="tabular">10</span>
+            Week <span className="tabular text-ink font-medium">{course.currentWeek}</span> of <span className="tabular">{course.totalWeeks}</span>
           </p>
         </div>
 

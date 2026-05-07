@@ -102,7 +102,7 @@ export function ProfilePage() {
                   <div className="min-w-0">
                     <p className="font-medium text-ink truncate">{course.name}</p>
                     <p className="text-2xs uppercase tracking-wider text-ink-subtle">
-                      {course.cohortName} · Week {course.currentWeek}/10
+                      {course.cohortName} · Week {course.currentWeek}/{course.totalWeeks}
                     </p>
                   </div>
                 </div>

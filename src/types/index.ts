@@ -220,6 +220,7 @@ export interface DashboardCourse {
   nextSessionTime: string;
   joinUrl: string;
   currentWeek: number;
+  totalWeeks: number;
   sessionsAttended: number;
   sessionsTotal: number;
   assignmentsCompleted: number;
@@ -254,4 +255,5 @@ export interface Resource {
   type: 'pdf' | 'audio' | 'video' | 'link';
   category: string;
   description: string;
+  url: string;
 }

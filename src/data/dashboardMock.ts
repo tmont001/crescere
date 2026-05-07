@@ -7,10 +7,11 @@ export const DASHBOARD_COURSES: DashboardCourse[] = [
     language: 'spanish',
     level: 'A2',
     cohortName: 'Cohort 14',
-    nextSessionDate: '2026-04-23',
+    nextSessionDate: '2026-05-12',
     nextSessionTime: '7:00 PM ET',
     joinUrl: 'https://meet.google.com/abc-defg-hij',
     currentWeek: 4,
+    totalWeeks: 10,
     sessionsAttended: 6,
     sessionsTotal: 20,
     assignmentsCompleted: 3,
@@ -22,10 +23,11 @@ export const DASHBOARD_COURSES: DashboardCourse[] = [
     language: 'french',
     level: 'A1',
     cohortName: 'Cohort 09',
-    nextSessionDate: '2026-04-24',
+    nextSessionDate: '2026-05-13',
     nextSessionTime: '8:00 AM ET',
     joinUrl: 'https://meet.google.com/xyz-uvwx-yza',
     currentWeek: 2,
+    totalWeeks: 10,
     sessionsAttended: 3,
     sessionsTotal: 20,
     assignmentsCompleted: 1,
@@ -130,6 +132,7 @@ export const RESOURCES: Resource[] = [
     type: 'pdf',
     category: 'Lessons',
     description: 'Pretérito vs. imperfecto — complete slides from the Tuesday session.',
+    url: '#',
   },
   {
     id: 'r2',
@@ -137,6 +140,7 @@ export const RESOURCES: Resource[] = [
     type: 'pdf',
     category: 'Lessons',
     description: '85 terms related to routines, daily life, and childhood memories.',
+    url: '#',
   },
   {
     id: 'r3',
@@ -144,6 +148,7 @@ export const RESOURCES: Resource[] = [
     type: 'audio',
     category: 'Practice',
     description: 'Native-speed dialogue at a Madrid market with transcript and questions.',
+    url: '#',
   },
   {
     id: 'r4',
@@ -151,6 +156,7 @@ export const RESOURCES: Resource[] = [
     type: 'video',
     category: 'Practice',
     description: '7-minute walkthrough with exercises. Watch between sessions.',
+    url: '#',
   },
   {
     id: 'r5',
@@ -158,6 +164,7 @@ export const RESOURCES: Resource[] = [
     type: 'link',
     category: 'Outside practice',
     description: 'Curated podcasts by level. Updated monthly by instructors.',
+    url: '#',
   },
   {
     id: 'r6',
@@ -165,5 +172,6 @@ export const RESOURCES: Resource[] = [
     type: 'video',
     category: 'Recordings',
     description: 'Full 60-minute session recording with chapter markers.',
+    url: '#',
   },
 ];

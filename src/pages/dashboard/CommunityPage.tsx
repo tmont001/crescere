@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Send } from 'lucide-react';
 import { Card, Textarea, Button, Badge } from '@/components/ui';
 import { PostCard } from '@/components/dashboard/PostCard';
-import { COMMUNITY_POSTS } from '@/data/dashboardMock';
+import { COMMUNITY_POSTS, DASHBOARD_COURSES } from '@/data/dashboardMock';
 import { cn } from '@/lib/cn';
 import type { CommunityPost } from '@/types';
 
@@ -17,6 +17,8 @@ type FilterId = typeof FILTERS[number]['id'];
 const CURRENT_PROMPT = 'Share a situation this week where you used your target language outside of class.';
 
 export function CommunityPage() {
+  const primaryLanguage = DASHBOARD_COURSES[0]?.language ?? 'spanish';
+
   const [filter, setFilter] = useState<FilterId>('all');
   const [draft, setDraft] = useState('');
   const [posts, setPosts] = useState<CommunityPost[]>(COMMUNITY_POSTS);
@@ -33,7 +35,7 @@ export function CommunityPage() {
       content: draft,
       timestamp: new Date().toISOString(),
       replies: 0,
-      language: 'spanish',
+      language: primaryLanguage,
     };
     setPosts([newPost, ...posts]);
     setDraft('');
