@@ -4,6 +4,7 @@ import { Card, Textarea, Button, Badge } from '@/components/ui';
 import { PostCard } from '@/components/dashboard/PostCard';
 import { COMMUNITY_POSTS, DASHBOARD_COURSES } from '@/data/dashboardMock';
 import { useUser } from '@/context/UserContext';
+import { useLocalStorage } from '@/lib/useLocalStorage';
 import { cn } from '@/lib/cn';
 import type { CommunityPost } from '@/types';
 
@@ -21,11 +22,16 @@ export function CommunityPage() {
   const primaryLanguage = DASHBOARD_COURSES[0]?.language ?? 'spanish';
   const { name } = useUser();
 
+  const [userPosts, setUserPosts] = useLocalStorage<CommunityPost[]>(
+    'crescere-community-posts',
+    [],
+  );
+
   const [filter, setFilter] = useState<FilterId>('all');
   const [draft, setDraft] = useState('');
-  const [posts, setPosts] = useState<CommunityPost[]>(COMMUNITY_POSTS);
 
-  const filtered = filter === 'all' ? posts : posts.filter((p) => p.language === filter);
+  const allPosts = [...userPosts, ...COMMUNITY_POSTS];
+  const filtered = filter === 'all' ? allPosts : allPosts.filter((p) => p.language === filter);
 
   function handlePost() {
     if (!draft.trim()) return;
@@ -39,7 +45,7 @@ export function CommunityPage() {
       replies: 0,
       language: primaryLanguage,
     };
-    setPosts([newPost, ...posts]);
+    setUserPosts((prev) => [newPost, ...prev]);
     setDraft('');
   }
 

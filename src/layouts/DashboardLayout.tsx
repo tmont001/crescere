@@ -49,7 +49,8 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* Sidebar */}
         <aside
           className={cn(
-            'fixed lg:sticky top-0 left-0 z-30 h-screen w-72 shrink-0',
+            'fixed lg:sticky top-16 lg:top-0 left-0 z-30 w-72 shrink-0',
+            'h-[calc(100vh-4rem)] lg:h-screen',
             'bg-paper-raised border-r border-line flex flex-col',
             'transition-transform duration-300 ease-editorial',
             mobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0',

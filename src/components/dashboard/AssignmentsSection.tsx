@@ -3,6 +3,7 @@ import { Check, Clock, Mic, PenLine, BookOpen, Upload, ArrowRight } from 'lucide
 import { Badge, Button, Textarea } from '@/components/ui';
 import { ASSIGNMENTS } from '@/data/dashboardMock';
 import { formatShortDate } from '@/lib/dates';
+import { useLocalStorage } from '@/lib/useLocalStorage';
 import type { Assignment } from '@/types';
 import { cn } from '@/lib/cn';
 
@@ -12,10 +13,31 @@ const TYPE_ICONS: Record<Assignment['type'], typeof PenLine> = {
   reading: BookOpen,
 };
 
+interface StoredSubmission {
+  submitted: boolean;
+  submission: string;
+  fileName: string | null;
+}
+
+type SubmissionRecord = Record<string, StoredSubmission>;
+
 export function AssignmentsSection({ courseId }: { courseId: string }) {
   const assignments = ASSIGNMENTS.filter((a) => a.courseId === courseId);
-  const pending = assignments.filter((a) => a.status === 'pending');
-  const completed = assignments.filter((a) => a.status !== 'pending');
+  const [submissionStore, setSubmissionStore] = useLocalStorage<SubmissionRecord>(
+    'crescere-submissions',
+    {},
+  );
+
+  function saveSubmission(id: string, data: StoredSubmission) {
+    setSubmissionStore((prev) => ({ ...prev, [id]: data }));
+  }
+
+  const pending = assignments.filter(
+    (a) => a.status === 'pending' && !submissionStore[a.id]?.submitted,
+  );
+  const completed = assignments.filter(
+    (a) => a.status !== 'pending' || submissionStore[a.id]?.submitted,
+  );
 
   return (
     <section className="mb-6">
@@ -38,6 +60,8 @@ export function AssignmentsSection({ courseId }: { courseId: string }) {
             key={assignment.id}
             assignment={assignment}
             isLast={idx === assignments.length - 1}
+            storedSubmission={submissionStore[assignment.id]}
+            onSaveSubmission={saveSubmission}
           />
         ))}
         {assignments.length === 0 && (
@@ -50,16 +74,26 @@ export function AssignmentsSection({ courseId }: { courseId: string }) {
   );
 }
 
-function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast: boolean }) {
+interface AssignmentItemProps {
+  assignment: Assignment;
+  isLast: boolean;
+  storedSubmission: StoredSubmission | undefined;
+  onSaveSubmission: (id: string, data: StoredSubmission) => void;
+}
+
+function AssignmentItem({ assignment, isLast, storedSubmission, onSaveSubmission }: AssignmentItemProps) {
   const [expanded, setExpanded] = useState(false);
-  const [submission, setSubmission] = useState('');
-  const [submitted, setSubmitted] = useState(assignment.status !== 'pending');
-  const [fileName, setFileName] = useState<string | null>(null);
+  const [submission, setSubmission] = useState(storedSubmission?.submission ?? '');
+  const [submitted, setSubmitted] = useState(
+    storedSubmission?.submitted ?? assignment.status !== 'pending',
+  );
+  const [fileName, setFileName] = useState<string | null>(storedSubmission?.fileName ?? null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const Icon = TYPE_ICONS[assignment.type];
 
   function handleSubmit() {
     if (!submission.trim() && !fileName) return;
+    onSaveSubmission(assignment.id, { submitted: true, submission, fileName });
     setSubmitted(true);
     setExpanded(false);
   }
@@ -68,13 +102,13 @@ function AssignmentItem({ assignment, isLast }: { assignment: Assignment; isLast
     <div className={cn('transition-colors', !isLast && 'border-b border-line')}>
       <button
         type="button"
-        onClick={() => assignment.status === 'pending' && setExpanded((v) => !v)}
+        onClick={() => !submitted && assignment.status === 'pending' && setExpanded((v) => !v)}
         className={cn(
           'w-full p-5 text-left',
           'flex items-start gap-4',
           'md:grid md:grid-cols-12 md:items-center md:gap-4',
-          assignment.status === 'pending' && 'hover:bg-paper cursor-pointer',
-          assignment.status !== 'pending' && 'cursor-default',
+          !submitted && assignment.status === 'pending' && 'hover:bg-paper cursor-pointer',
+          (submitted || assignment.status !== 'pending') && 'cursor-default',
         )}
       >
         {/* Status icon — shrink-0 on mobile, col-span-1 on desktop */}

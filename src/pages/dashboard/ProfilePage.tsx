@@ -3,8 +3,21 @@ import { Bell, Moon, Globe, Check } from 'lucide-react';
 import { Card, Input, Button, Badge } from '@/components/ui';
 import { useTheme } from '@/context/ThemeContext';
 import { useUser } from '@/context/UserContext';
+import { useLocalStorage } from '@/lib/useLocalStorage';
 import { DASHBOARD_COURSES } from '@/data/dashboardMock';
 import { cn } from '@/lib/cn';
+
+interface NotificationPrefs {
+  emailReminders: boolean;
+  sessionReminders: boolean;
+  communityDigest: boolean;
+}
+
+const DEFAULT_NOTIFICATIONS: NotificationPrefs = {
+  emailReminders: true,
+  sessionReminders: true,
+  communityDigest: false,
+};
 
 export function ProfilePage() {
   const { theme, toggle } = useTheme();
@@ -12,14 +25,19 @@ export function ProfilePage() {
   const [name, setName] = useState(userName);
   const [email, setEmail] = useState(userEmail);
   const [timezone, setTimezone] = useState(userTimezone);
-  const [emailReminders, setEmailReminders] = useState(true);
-  const [sessionReminders, setSessionReminders] = useState(true);
-  const [communityDigest, setCommunityDigest] = useState(false);
+  const [storedNotifications, setStoredNotifications] = useLocalStorage<NotificationPrefs>(
+    'crescere-notifications',
+    DEFAULT_NOTIFICATIONS,
+  );
+  const [emailReminders, setEmailReminders] = useState(storedNotifications.emailReminders);
+  const [sessionReminders, setSessionReminders] = useState(storedNotifications.sessionReminders);
+  const [communityDigest, setCommunityDigest] = useState(storedNotifications.communityDigest);
   const [saved, setSaved] = useState(false);
 
   function handleSave(e: React.FormEvent) {
     e.preventDefault();
     updateUser({ name, email, timezone });
+    setStoredNotifications({ emailReminders, sessionReminders, communityDigest });
     setSaved(true);
     setTimeout(() => setSaved(false), 2400);
   }

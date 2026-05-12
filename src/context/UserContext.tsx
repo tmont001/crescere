@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, type ReactNode } from 'react';
+import { useLocalStorage } from '@/lib/useLocalStorage';
 
 interface UserState {
   name: string;
@@ -30,7 +31,7 @@ const DEFAULT_USER: UserState = {
 };
 
 export function UserProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<UserState>(DEFAULT_USER);
+  const [user, setUser] = useLocalStorage<UserState>('crescere-user', DEFAULT_USER);
 
   function updateUser(updates: Partial<UserState>) {
     setUser((prev) => ({ ...prev, ...updates }));
