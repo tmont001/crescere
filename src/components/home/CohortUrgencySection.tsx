@@ -1,13 +1,56 @@
 import { ArrowRight, CalendarDays } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Section, SectionHeader, ButtonLink, Badge } from '@/components/ui';
+import { Section, SectionHeader, ButtonLink } from '@/components/ui';
 import { getUpcomingCohorts } from '@/data/cohorts';
 import { getCourseById } from '@/data/courses';
 import { formatCohortDate, daysUntil } from '@/lib/dates';
+import { Badge } from '@/components/ui';
 import { cn } from '@/lib/cn';
 
 export function CohortUrgencySection() {
   const cohorts = getUpcomingCohorts().slice(0, 5);
+
+  if (cohorts.length === 0) {
+    return (
+      <Section variant="sunken" size="md">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <SectionHeader
+            eyebrow="Upcoming cohorts"
+            title={
+              <>
+                Small groups.
+                <br />
+                <span className="italic font-normal text-accent">Forming soon.</span>
+              </>
+            }
+          />
+          <p className="text-ink-muted max-w-sm leading-relaxed text-[0.9375rem]">
+            Cohorts are capped at 12 students. Dates will be announced as soon as they are confirmed.
+          </p>
+        </div>
+
+        <div className="border border-line rounded-md bg-paper-raised p-10 text-center">
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-accent-soft mb-6">
+            <CalendarDays size={22} strokeWidth={1.5} className="text-accent" />
+          </div>
+          <p className="font-display text-2xl text-ink mb-3">
+            Upcoming cohort dates will be announced soon.
+          </p>
+          <p className="text-ink-muted leading-relaxed max-w-md mx-auto mb-8">
+            We are currently forming cohorts for French and Spanish at the A1, A2, and B1 levels.
+            Contact us to get on the interest list and be notified when scheduling opens.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <ButtonLink to="/contact" size="lg" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
+              Express Interest
+            </ButtonLink>
+            <ButtonLink to="/courses" size="lg" variant="secondary">
+              View Courses
+            </ButtonLink>
+          </div>
+        </div>
+      </Section>
+    );
+  }
 
   return (
     <Section variant="sunken" size="md">
@@ -23,7 +66,7 @@ export function CohortUrgencySection() {
           }
         />
         <p className="text-ink-muted max-w-sm leading-relaxed text-[0.9375rem]">
-          Every cohort is capped at 12 students. When a spot is gone, it's gone until the next one opens.
+          Every cohort is capped at 12 students and requires a minimum of 5. You will be contacted to confirm scheduling and next steps before any payment is collected.
         </p>
       </div>
 
@@ -98,13 +141,14 @@ export function CohortUrgencySection() {
 
               {/* CTA */}
               <div className="col-span-5 md:col-span-2 flex md:justify-end">
-                <Link
-                  to="/enroll"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-ink group-hover:text-accent transition-colors"
+                <ButtonLink
+                  to={`/enroll?course=${cohort.courseId}`}
+                  size="sm"
+                  variant="ghost"
+                  icon={<ArrowRight size={14} strokeWidth={1.5} />}
                 >
-                  Save Spot
-                  <ArrowRight size={14} strokeWidth={1.5} className="transition-transform group-hover:translate-x-0.5" />
-                </Link>
+                  Express Interest
+                </ButtonLink>
               </div>
             </div>
           );
@@ -113,7 +157,7 @@ export function CohortUrgencySection() {
 
       <div className="mt-10 flex justify-center">
         <ButtonLink to="/courses" variant="ghost" size="md" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
-          View all cohorts
+          View all courses
         </ButtonLink>
       </div>
     </Section>

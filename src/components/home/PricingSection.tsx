@@ -2,12 +2,12 @@ import { Check, ArrowRight } from 'lucide-react';
 import { Section, ButtonLink, Badge } from '@/components/ui';
 
 const INCLUDED = [
-  '20 live sessions over 10 weeks',
+  '24 live sessions over 12 weeks',
   'Small group (5–12 students)',
   'Complete curriculum and materials',
   'Weekly assignments with feedback',
   'Session recordings and replays',
-  'Access to community + Learning Dashboard',
+  'Live on Google Meet — no extra software',
 ];
 
 export function PricingSection() {
@@ -35,13 +35,13 @@ export function PricingSection() {
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 pb-10 border-b border-line">
               <div>
                 <Badge variant="outline" size="md" className="mb-4">
-                  10-Week Program
+                  12-Week Program
                 </Badge>
                 <h3 className="font-display text-3xl md:text-4xl text-ink leading-tight mb-3">
                   French or Spanish, end&#8209;to&#8209;end.
                 </h3>
                 <p className="text-ink-muted max-w-md leading-relaxed">
-                  20 live sessions · Small group · Structured from week one to week ten.
+                  24 live sessions · Small group · Structured from week one to week twelve.
                 </p>
               </div>
 
@@ -67,7 +67,7 @@ export function PricingSection() {
 
             <div className="mt-10 pt-8 border-t border-line flex flex-col md:flex-row gap-3">
               <ButtonLink to="/enroll" size="lg" icon={<ArrowRight size={18} strokeWidth={1.5} />}>
-                Enroll Now
+                Express Interest
               </ButtonLink>
               <ButtonLink to="/placement" size="lg" variant="secondary">
                 Take Placement Test
@@ -75,11 +75,11 @@ export function PricingSection() {
             </div>
 
             <div className="mt-8 pt-6 border-t border-dashed border-line flex items-start gap-3">
-              <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-highlight-soft text-highlight font-display text-sm shrink-0">
-                +
+              <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-line text-ink-subtle font-display text-sm shrink-0">
+                i
               </span>
               <p className="text-[0.9375rem] text-ink-muted leading-relaxed">
-                <span className="text-ink font-medium">Bring a friend.</span> Enroll together and you both get <span className="text-ink font-medium tabular">$75 off</span>.
+                Payment details are confirmed with you before any charges occur. Expressing interest does not commit you to payment.
               </p>
             </div>
           </div>

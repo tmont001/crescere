@@ -67,7 +67,7 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <ThemeToggle className="hidden sm:inline-flex" />
             <ButtonLink to="/enroll" size="sm" className="hidden md:inline-flex">
-              Enroll
+              Express Interest
             </ButtonLink>
             <button
               type="button"
@@ -101,7 +101,7 @@ export function Nav() {
             ))}
             <div className="flex items-center gap-3 pt-4">
               <ButtonLink to="/enroll" size="md" fullWidth>
-                Enroll
+                Express Interest
               </ButtonLink>
               <ThemeToggle />
             </div>

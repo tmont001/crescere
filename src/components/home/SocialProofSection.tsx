@@ -10,7 +10,7 @@ export function SocialProofSection() {
   return (
     <Section variant="sunken" size="md">
       <SectionHeader
-        eyebrow="Social proof"
+        eyebrow="Student Stories"
         title={
           <>
             Real progress.

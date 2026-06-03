@@ -33,8 +33,8 @@ export function FAQPage() {
           </h1>
           <p className="mt-8 text-lg text-ink-muted leading-relaxed">
             If something's still unclear after reading these, reach out at{' '}
-            <a href="mailto:hello@crescere.com" className="text-ink hover:text-accent border-b border-line hover:border-accent transition-colors">
-              hello@crescere.com
+            <a href="mailto:montanarowl@gmail.com" className="text-ink hover:text-accent border-b border-line hover:border-accent transition-colors">
+              montanarowl@gmail.com
             </a>
             .
           </p>

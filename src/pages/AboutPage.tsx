@@ -41,7 +41,7 @@ export function AboutPage() {
             />
             <Pillar
               title="No noise in the curriculum."
-              body="Ten weeks. Twenty sessions. One clear syllabus. No endless library, no 'Pro' upsell, no AI tutor gimmicks. Everything in the program is there because it's necessary — or it's not in the program."
+              body="Twelve weeks. Twenty-four sessions. One clear syllabus. No endless library, no 'Pro' upsell, no AI tutor gimmicks. Everything in the program is there because it's necessary — or it's not in the program."
             />
           </div>
         </div>
@@ -50,23 +50,28 @@ export function AboutPage() {
       <Section size="sm" variant="default">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <SectionHeader eyebrow="Who it's for" title="Three kinds of learners." />
+            <SectionHeader eyebrow="Who it's for" title="Four kinds of learners." />
           </div>
           <div className="md:col-span-8 grid grid-cols-1 gap-5">
             <AudienceCard
-              tag="Primary"
-              title="Busy professionals"
-              body="You want to go from survival-level to conversational fluency without adding another app to your phone. Two evenings a week, ten weeks, real progress."
+              tag="Professionals"
+              title="Busy adults"
+              body="You want to go from survival-level to conversational fluency without adding another app to your phone. Two 1-hour sessions per week, twelve weeks, real progress."
             />
             <AudienceCard
-              tag="Secondary"
-              title="Travelers"
+              tag="Travelers"
+              title="Frequent travelers"
               body="You visit a country often — for work, family, or pleasure — and you're tired of leaning on translation apps. You want to operate independently when you land."
             />
             <AudienceCard
-              tag="Tertiary"
-              title="Students"
+              tag="Students"
+              title="College and high school students"
               body="You're filling a gap between classes, preparing for study abroad, or making sure your classroom French or Spanish actually translates to real life."
+            />
+            <AudienceCard
+              tag="Families"
+              title="Parents and younger learners"
+              body="Learning a language as a family, or supporting a child who wants a structured course alongside school. Younger learners are welcome with a parent or guardian — reach out to confirm the cohort is the right fit."
             />
           </div>
         </div>

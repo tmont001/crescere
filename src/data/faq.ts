@@ -13,48 +13,49 @@ export const FAQ_ITEMS: FAQItem[] = [
     category: 'program',
     question: 'How big is each cohort?',
     answer:
-      'Every cohort is limited to 12 students, with most running between 5 and 10. Small enough that you speak in every session. Large enough that there is real conversation and variety.',
+      'Every cohort is capped at 12 students, with most running between 5 and 10. Small enough that you speak in every session. Large enough that there is real conversation and variety. A minimum of 5 enrolled students is required for a cohort to run — if a cohort does not reach that threshold, you will be notified and offered a transfer or full refund.',
   },
   {
     id: 'q3',
     category: 'logistics',
     question: 'What if I miss a session?',
     answer:
-      'All live sessions are recorded and available in your Learning Dashboard within 24 hours. Homework and practice materials are posted weekly so you can stay current.',
+      'All live sessions are recorded. You can review recordings at any time. Staying current on the weekly practice materials helps you keep pace with the cohort.',
   },
   {
     id: 'q4',
     category: 'logistics',
     question: 'How much time should I plan outside of live sessions?',
     answer:
-      'Expect 2–3 hours per week of self-study on top of the two live sessions. That includes vocabulary review, guided practice, and a weekly assignment. More is welcome; less is workable.',
+      'Generally no more than 30 minutes of practice after each class session — vocabulary review, guided exercises, or a short weekly assignment. Two live sessions per week plus light practice keeps progress steady without overwhelming your schedule.',
   },
   {
     id: 'q5',
     category: 'logistics',
     question: 'Where do the live sessions happen?',
-    answer: 'All sessions run on Google Meet. You will find your join link in your Learning Dashboard before each session.',
+    answer:
+      'All sessions run live on Google Meet. You will receive a join link before each session. All you need is a computer with a working webcam and microphone and a stable internet connection.',
   },
   {
     id: 'q6',
     category: 'pricing',
     question: 'What does the $1,200 include?',
     answer:
-      'The full 10-week program: 20 live sessions, all curriculum materials, assignments and feedback, access to the Learning Dashboard and community, and session recordings. There are no hidden fees.',
+      'The full 12-week program: 24 live 1-hour sessions (twice per week), all curriculum materials, assignments and feedback, and session recordings. There are no hidden fees.',
   },
   {
     id: 'q7',
     category: 'pricing',
     question: 'Do you offer refunds?',
     answer:
-      'Yes. If you attend the first two sessions and decide the program is not for you, we will refund your enrollment in full. After that, we offer pro-rated credit toward a future cohort.',
+      'Yes. If you attend the first two sessions and decide the program is not for you, we will refund your payment in full, no questions asked. After that, we offer pro-rated credit toward a future cohort, valid for twelve months from the date of your original enrollment.',
   },
   {
     id: 'q8',
     category: 'pricing',
-    question: 'How does the referral discount work?',
+    question: 'Is there a referral discount?',
     answer:
-      'If you enroll with a friend in any cohort, you each receive $75 off. The discount is applied automatically at checkout when your friend enters your referral code.',
+      'We plan to offer a referral program — bring a friend and you both save — but it is not active yet. Details will be announced when the program launches. Any discount will be confirmed in writing before any payment is collected.',
   },
   {
     id: 'q9',
@@ -68,20 +69,34 @@ export const FAQ_ITEMS: FAQItem[] = [
     category: 'technical',
     question: 'What do I need to participate?',
     answer:
-      'A computer with a webcam and microphone, a stable internet connection, and a quiet space for your live sessions. That is it.',
+      'A computer with a webcam and microphone, a stable internet connection, and a quiet space for your live sessions. Sessions run on Google Meet — no additional software to install.',
   },
   {
     id: 'q11',
     category: 'program',
     question: 'Can I take French and Spanish at the same time?',
     answer:
-      'Yes. Your Learning Dashboard supports multiple active courses. That said, most learners get better results focusing on one language per 10-week program.',
+      'Yes. That said, most learners get better results focusing on one language per 12-week program before beginning the next.',
   },
   {
     id: 'q12',
     category: 'logistics',
     question: 'When do the next cohorts start?',
     answer:
-      'New cohorts open every 2–3 weeks across levels. You can see the full schedule on the Courses page, and reserve a spot with a refundable deposit.',
+      'Upcoming cohort dates have not yet been published. You can express interest through the enrollment page or contact us directly at montanarowl@gmail.com. We will reach out with scheduling options before any payment is requested.',
+  },
+  {
+    id: 'q13',
+    category: 'pricing',
+    question: 'When and how do I pay?',
+    answer:
+      'Payment details will be confirmed with you before any charges occur. Submitting an enrollment interest request does not commit you to payment or reserve a paid seat. We will contact you to confirm scheduling, cohort details, and payment before anything is collected.',
+  },
+  {
+    id: 'q14',
+    category: 'program',
+    question: 'Is this program suitable for high school students or younger learners?',
+    answer:
+      'Yes. The program welcomes adult learners, college students, high school students, and younger learners accompanied by a parent or guardian. If you are enrolling a younger student, please mention this when you reach out so we can confirm the cohort is a good fit.',
   },
 ];

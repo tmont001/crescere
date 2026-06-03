@@ -22,7 +22,7 @@ export function CoursesPage() {
               <span className="italic font-normal text-accent">three levels each.</span>
             </>
           }
-          description="Every course is ten weeks, twenty live sessions, small groups, and structured curriculum. Pick your language, pick your level."
+          description="Every course is twelve weeks, 24 live 1-hour sessions, small groups (5–12 students), and structured curriculum. Available in French and Spanish. Pick your language, pick your level."
         />
       </Section>
 
@@ -97,19 +97,25 @@ function CourseCard({ course }: { course: typeof COURSES[number] }) {
           {course.description}
         </p>
 
-        {nextCohort && (
-          <div className="pt-5 border-t border-line">
-            <div className="flex items-center gap-2 text-2xs uppercase tracking-wider text-ink-subtle mb-1.5">
-              <CalendarDays size={12} strokeWidth={1.5} />
-              <span>Next cohort</span>
-            </div>
-            <p className="text-sm text-ink">{formatCohortDate(nextCohort.startDate)}</p>
-            <p className="text-sm text-ink-muted mt-0.5">
-              <span className="tabular">{nextCohort.spotsRemaining}</span> of{' '}
-              <span className="tabular">{nextCohort.spotsTotal}</span> spots remaining
+        <div className="pt-5 border-t border-line">
+          {nextCohort ? (
+            <>
+              <div className="flex items-center gap-2 text-2xs uppercase tracking-wider text-ink-subtle mb-1.5">
+                <CalendarDays size={12} strokeWidth={1.5} />
+                <span>Next cohort</span>
+              </div>
+              <p className="text-sm text-ink">{formatCohortDate(nextCohort.startDate)}</p>
+              <p className="text-sm text-ink-muted mt-0.5">
+                <span className="tabular">{nextCohort.spotsRemaining}</span> of{' '}
+                <span className="tabular">{nextCohort.spotsTotal}</span> spots remaining
+              </p>
+            </>
+          ) : (
+            <p className="text-sm text-accent font-medium">
+              Express interest → dates being confirmed
             </p>
-          </div>
-        )}
+          )}
+        </div>
       </Card>
     </Link>
   );

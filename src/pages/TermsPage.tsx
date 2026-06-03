@@ -6,18 +6,18 @@ export function TermsPage() {
       <div className="max-w-2xl mx-auto">
         <p className="eyebrow mb-4">Legal</p>
         <h1 className="display-2 text-ink mb-4">Terms of service</h1>
-        <p className="text-ink-muted mb-12">Last updated: April 22, 2026</p>
+        <p className="text-ink-muted mb-12">Last updated: June 2, 2026</p>
 
         <div className="prose prose-lg space-y-10">
-          <TermsSection number="1" title="Enrollment">
+          <TermsSection number="1" title="Enrollment and interest requests">
             <p>
-              Enrolling in a cohort creates a binding agreement for the full 10-week program. Enrollment is confirmed when payment is received and a cohort seat is reserved in your name. Seats are limited and allocated on a first-come, first-served basis.
+              Submitting an enrollment interest request on this website does not create a binding enrollment, reserve a paid seat, or commit you to any payment. Enrollment is confirmed only when you receive written confirmation from Crescere that a cohort seat has been reserved in your name and payment terms have been agreed upon. All confirmation will be sent to the email address you provide.
             </p>
           </TermsSection>
 
           <TermsSection number="2" title="Payment">
             <p>
-              The program fee is $1,200 USD. Payment is due in full at the time of enrollment. Referral discounts are applied automatically at checkout when a valid referral code is entered. All payments are processed via third-party payment providers subject to their own terms.
+              The program fee is $1,200 USD per 12-week course. Payment details will be communicated to you in writing before any charges are collected. No payment is processed automatically through this website. Crescere will confirm the cohort, schedule, and payment method with you directly before any amount is due.
             </p>
           </TermsSection>
 
@@ -25,17 +25,20 @@ export function TermsPage() {
             <p>
               You may request a full refund after attending the first two live sessions, no questions asked, provided the request is submitted in writing before your third session. After your third session, you may request a pro-rated credit toward a future cohort, valid for twelve months from the date of your original enrollment.
             </p>
+            <p className="mt-4">
+              If a cohort does not reach the minimum enrollment of 5 students, it will not run. Students in that cohort will be notified in advance and offered a transfer to the next available cohort or a full refund of any amount paid.
+            </p>
           </TermsSection>
 
           <TermsSection number="4" title="Attendance and access">
             <p>
-              While live attendance is strongly recommended, all sessions are recorded and made available in your Learning Dashboard within twenty-four hours. Access to all course materials is guaranteed for the full cohort duration and an additional thirty days afterward.
+              While live attendance is strongly recommended, all sessions are recorded and made available to enrolled students. Access to all course materials is guaranteed for the full cohort duration and an additional thirty days afterward.
             </p>
           </TermsSection>
 
           <TermsSection number="5" title="Conduct">
             <p>
-              All participants are expected to maintain a respectful, constructive environment in live sessions and community spaces. We reserve the right to remove any participant whose conduct materially disrupts the learning experience of others. Removals under this clause are not eligible for refund.
+              All participants are expected to maintain a respectful, constructive environment in live sessions and any shared spaces. We reserve the right to remove any participant whose conduct materially disrupts the learning experience of others. Removals under this clause are not eligible for refund.
             </p>
           </TermsSection>
 
@@ -55,12 +58,12 @@ export function TermsPage() {
             <p>
               For any questions about these terms, reach out at{' '}
               <a
-                href="mailto:hello@crescere.com"
+                href="mailto:montanarowl@gmail.com"
                 className="text-ink border-b border-line hover:border-accent hover:text-accent transition-colors"
               >
-                hello@crescere.com
+                montanarowl@gmail.com
               </a>
-              . We respond within twenty-four hours.
+              . We respond within one business day.
             </p>
           </TermsSection>
         </div>

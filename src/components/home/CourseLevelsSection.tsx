@@ -22,7 +22,7 @@ export function CourseLevelsSection() {
           }
         />
         <p className="text-ink-muted max-w-md leading-relaxed">
-          Each level is a complete 10-week program. Take them in sequence, or start where the placement test says you should.
+          Each level is a complete 12-week program, available in both French and Spanish. Take them in sequence, or start where the placement test says you should.
         </p>
       </div>
 

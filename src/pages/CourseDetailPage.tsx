@@ -88,17 +88,25 @@ export function CourseDetailPage() {
                     <span className="font-display text-xl tabular text-ink">$1,200</span>
                   </div>
 
-                  <ButtonLink to="/enroll" fullWidth size="lg" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
-                    Enroll Now
+                  <ButtonLink to={`/enroll?course=${course.id}`} fullWidth size="lg" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
+                    Express Interest
                   </ButtonLink>
                   <ButtonLink to="/placement" fullWidth size="md" variant="ghost" className="mt-2">
                     Not sure? Take the test
                   </ButtonLink>
                 </>
               ) : (
-                <p className="text-ink-muted">
-                  No upcoming cohorts scheduled at the moment. Check back soon.
-                </p>
+                <>
+                  <p className="text-ink-muted mb-6">
+                    No cohort dates have been published yet for this course. Express interest and we will notify you when scheduling opens.
+                  </p>
+                  <ButtonLink to={`/enroll?course=${course.id}`} fullWidth size="lg" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
+                    Join the Interest List
+                  </ButtonLink>
+                  <ButtonLink to="/placement" fullWidth size="md" variant="ghost" className="mt-2">
+                    Not sure? Take the test
+                  </ButtonLink>
+                </>
               )}
             </Card>
           </div>
@@ -162,8 +170,8 @@ export function CourseDetailPage() {
                   <span className="text-ink-muted"> / {cohort.spotsTotal} spots</span>
                 </div>
                 <div className="col-span-3 flex md:justify-end">
-                  <ButtonLink to="/enroll" size="sm" variant="ghost">
-                    Enroll
+                  <ButtonLink to={`/enroll?course=${course.id}`} size="sm" variant="ghost">
+                    Express Interest
                   </ButtonLink>
                 </div>
               </div>

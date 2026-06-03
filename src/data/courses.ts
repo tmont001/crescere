@@ -11,8 +11,8 @@ export const COURSES: Course[] = [
     description:
       'Build a working foundation in French. Learn to introduce yourself, order, navigate, and hold simple conversations.',
     longDescription:
-      'French A1 is designed for absolute beginners or learners returning after a long break. Over 10 weeks, you will build a confident foundation in pronunciation, core grammar, and the vocabulary you need for everyday situations — introductions, directions, shopping, eating out, and small talk. By the end, you will hold your first real conversations in French.',
-    weeks: 10,
+      'French A1 is designed for absolute beginners or learners returning after a long break. Over 12 weeks — two 1-hour sessions per week — you will build a confident foundation in pronunciation, core grammar, and the vocabulary you need for everyday situations: introductions, directions, shopping, eating out, and small talk. By the end, you will hold your first real conversations in French.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Greetings and introductions',
@@ -34,8 +34,8 @@ export const COURSES: Course[] = [
     description:
       'Move beyond survival phrases. Talk about your past, make plans, express opinions, and handle real-world situations with ease.',
     longDescription:
-      'French A2 takes you from basic phrases to real fluency on everyday topics. Over 10 weeks, you will master past and future tenses, expand your vocabulary to 1,500+ words, and practice navigating work, travel, and social situations. You will leave able to speak comfortably about your life, plans, and opinions.',
-    weeks: 10,
+      'French A2 takes you from basic phrases to real fluency on everyday topics. Over 12 weeks — two 1-hour sessions per week — you will master past and future tenses, expand your vocabulary to 1,500+ words, and practice navigating work, travel, and social situations. You will leave able to speak comfortably about your life, plans, and opinions.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Passé composé and imparfait',
@@ -57,8 +57,8 @@ export const COURSES: Course[] = [
     description:
       'Handle the full range of daily French. Discuss abstract ideas, defend positions, and operate confidently in professional settings.',
     longDescription:
-      'French B1 is for intermediate learners ready to cross into true conversational independence. You will master the subjunctive, conditional, and advanced connectors, and build fluency on abstract topics — politics, culture, career, relationships. Weekly discussions and role-plays simulate real professional and social French.',
-    weeks: 10,
+      'French B1 is for intermediate learners ready to cross into true conversational independence. Over 12 weeks — two 1-hour sessions per week — you will master the subjunctive, conditional, and advanced connectors, and build fluency on abstract topics: politics, culture, career, relationships. Weekly discussions and role-plays simulate real professional and social French.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Subjunctive mood',
@@ -81,8 +81,8 @@ export const COURSES: Course[] = [
     description:
       'Build a working foundation in Spanish. Learn to introduce yourself, order, navigate, and hold simple conversations.',
     longDescription:
-      'Spanish A1 is designed for absolute beginners or learners returning after a long break. Over 10 weeks, you will build a confident foundation in pronunciation, core grammar, and the vocabulary you need for everyday situations — introductions, directions, shopping, eating out, and small talk.',
-    weeks: 10,
+      'Spanish A1 is designed for absolute beginners or learners returning after a long break. Over 12 weeks — two 1-hour sessions per week — you will build a confident foundation in pronunciation, core grammar, and the vocabulary you need for everyday situations: introductions, directions, shopping, eating out, and small talk.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Greetings and introductions',
@@ -104,8 +104,8 @@ export const COURSES: Course[] = [
     description:
       'Move beyond survival phrases. Talk about your past, make plans, express opinions, and handle real-world situations with ease.',
     longDescription:
-      'Spanish A2 takes you from basic phrases to real fluency on everyday topics. Over 10 weeks, you will master past tenses, expand your vocabulary significantly, and practice navigating work, travel, and social situations across the Spanish-speaking world.',
-    weeks: 10,
+      'Spanish A2 takes you from basic phrases to real fluency on everyday topics. Over 12 weeks — two 1-hour sessions per week — you will master past tenses, expand your vocabulary significantly, and practice navigating work, travel, and social situations across the Spanish-speaking world.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Pretérito and imperfecto',
@@ -127,8 +127,8 @@ export const COURSES: Course[] = [
     description:
       'Handle the full range of daily Spanish. Discuss abstract ideas, defend positions, and operate confidently in professional settings.',
     longDescription:
-      'Spanish B1 is for intermediate learners ready to cross into true conversational independence. You will master the subjunctive, conditional, and advanced connectors, and build fluency on abstract topics — politics, culture, career, relationships.',
-    weeks: 10,
+      'Spanish B1 is for intermediate learners ready to cross into true conversational independence. Over 12 weeks — two 1-hour sessions per week — you will master the subjunctive, conditional, and advanced connectors, and build fluency on abstract topics: politics, culture, career, relationships.',
+    weeks: 12,
     sessionsPerWeek: 2,
     topics: [
       'Subjunctive mood',

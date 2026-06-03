@@ -4,7 +4,7 @@ import {
   BookOpen,
   Mic,
   MessageCircle,
-  LayoutDashboard,
+  Monitor,
   type LucideIcon,
 } from 'lucide-react';
 import { Section, SectionHeader } from '@/components/ui';
@@ -18,13 +18,13 @@ interface Feature {
 const FEATURES: Feature[] = [
   {
     icon: Video,
-    title: '20 live sessions',
-    description: 'Two hours of live instruction every week for ten weeks. Recordings if you miss one.',
+    title: '24 live sessions',
+    description: 'Two 1-hour sessions every week for twelve weeks. Recordings available if you miss one.',
   },
   {
     icon: Users,
     title: 'Small group learning',
-    description: 'Cohorts capped at twelve students. Most run between five and ten.',
+    description: 'Cohorts capped at 12 students, minimum 5. Most run between five and ten.',
   },
   {
     icon: BookOpen,
@@ -39,12 +39,12 @@ const FEATURES: Feature[] = [
   {
     icon: MessageCircle,
     title: 'Ongoing support',
-    description: 'Weekly feedback on assignments, office hours, and a community of peers.',
+    description: 'Weekly practice assignments and direct access to your instructor between sessions.',
   },
   {
-    icon: LayoutDashboard,
-    title: 'Learning Dashboard',
-    description: 'All your sessions, materials, assignments, and progress in one clean place.',
+    icon: Monitor,
+    title: 'Live on Google Meet',
+    description: 'Sessions run on Google Meet. No special software — just a webcam, mic, and internet connection.',
   },
 ];
 

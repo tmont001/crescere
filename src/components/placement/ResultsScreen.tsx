@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import { ArrowRight, Check, Clock, Mail, RotateCcw } from 'lucide-react';
-import { Card, Badge, Button, ButtonLink, Input } from '@/components/ui';
+import { ArrowRight, Check, Clock, RotateCcw } from 'lucide-react';
+import { Card, Badge, ButtonLink } from '@/components/ui';
 import { getCourseById } from '@/data/courses';
 import { getNextCohortForCourse } from '@/data/cohorts';
 import { formatCohortDate } from '@/lib/dates';
@@ -12,10 +11,6 @@ interface ResultsScreenProps {
   onReset: () => void;
 }
 
-/**
- * Friendly headline copy that adapts to where the learner placed.
- * Never tells someone with a perfect score that they "struggled".
- */
 function buildSummaryCopy(result: PlacementResult): {
   headline: string;
   subhead: string;
@@ -73,22 +68,16 @@ function buildSummaryCopy(result: PlacementResult): {
   };
 }
 
+const CONTACT_EMAIL = 'montanarowl@gmail.com';
+
 export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
   const course = result.recommendedCourseId
     ? getCourseById(result.recommendedCourseId)
     : null;
   const cohort = course ? getNextCohortForCourse(course.id) : undefined;
-  const [email, setEmail] = useState('');
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const { headline, subhead } = buildSummaryCopy(result);
   const perfect = result.score === result.totalQuestions;
-
-  function handleEmailSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    setEmailSubmitted(true);
-  }
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -171,7 +160,7 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
         )}
       </Card>
 
-      {/* Review-pending notice — shown when writing or voice was submitted */}
+      {/* Review-pending notice */}
       {result.reviewNeeded && (
         <Card variant="default" className="p-6 mb-6 border border-accent/30">
           <div className="flex items-start gap-3">
@@ -179,20 +168,20 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
               <Clock size={14} strokeWidth={1.5} className="text-accent" />
             </div>
             <div>
-              <p className="font-display text-base text-ink mb-1">Review in progress</p>
+              <p className="font-display text-base text-ink mb-1">Open-ended sections noted</p>
               <p className="text-sm text-ink-muted leading-relaxed">
                 Your{' '}
                 {result.reviewSections.join(' and ')}{' '}
-                {result.reviewSections.length === 1 ? 'submission has' : 'submissions have'} been
-                saved for teacher review. The CEFR level above reflects your auto-scored results
-                and may be refined after review.
+                {result.reviewSections.length === 1 ? 'response has' : 'responses have'} been
+                recorded locally. The CEFR level above reflects your auto-scored results.
+                Mention your open-ended responses when you contact us so we can provide additional feedback.
               </p>
             </div>
           </div>
         </Card>
       )}
 
-      {/* Recommendation — branches on whether we have a matching cohort course */}
+      {/* Recommendation — A1/A2/B1: matching course; B2/C1: above offered levels */}
       {course ? (
         <Card variant="default" className="p-8 mb-6 border-2 border-ink">
           <div className="flex items-start justify-between gap-6 flex-col md:flex-row">
@@ -204,7 +193,7 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
               <p className="text-ink-muted leading-relaxed mb-5 max-w-xl">
                 {course.description}
               </p>
-              {cohort && (
+              {cohort ? (
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm pt-4 border-t border-line">
                   <span className="text-ink-muted">
                     Next cohort:{' '}
@@ -221,11 +210,19 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
                     <span className="tabular">{cohort.spotsRemaining}</span> spots left
                   </span>
                 </div>
+              ) : (
+                <p className="text-sm text-ink-muted pt-4 border-t border-line">
+                  No cohort dates are published yet — express interest and we will notify you when scheduling opens.
+                </p>
               )}
             </div>
             <div className="flex flex-col gap-2 w-full md:w-auto shrink-0">
-              <ButtonLink to="/enroll" size="lg" icon={<ArrowRight size={16} strokeWidth={1.5} />}>
-                Enroll Now
+              <ButtonLink
+                to={`/enroll?course=${course.id}`}
+                size="lg"
+                icon={<ArrowRight size={16} strokeWidth={1.5} />}
+              >
+                Express Interest
               </ButtonLink>
               <ButtonLink to={`/courses/${course.id}`} size="lg" variant="secondary">
                 View Course
@@ -239,32 +236,28 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
           <div className="flex items-start justify-between gap-6 flex-col md:flex-row">
             <div className="flex-1">
               <p className="eyebrow text-accent mb-3">
-                {result.level === 'C1' ? 'Advanced review' : 'Above group level'}
+                {result.level === 'C1' ? 'Advanced level' : 'Above group cohort level'}
               </p>
               <h2 className="font-display text-3xl md:text-4xl text-ink leading-tight mb-3">
                 You may be above our current group cohort levels.
               </h2>
               <p className="text-ink-muted leading-relaxed mb-3 max-w-xl">
-                Our group cohorts currently focus on A1 through B1. Based on your
-                {' '}
-                <span className="text-ink font-medium">{result.level}</span>
-                {' '}
-                placement, a structured group beginner-to-intermediate course is
-                unlikely to be the right fit.
+                Our group cohorts currently focus on A1 through B1. Based on your{' '}
+                <span className="text-ink font-medium">{result.level}</span>{' '}
+                placement, a beginner-to-intermediate group course is unlikely to be the right fit.
               </p>
               <p className="text-ink-muted leading-relaxed max-w-xl">
-                We recommend a short consultation so we can match you with an advanced
-                private placement, conversation practice, or a maintenance plan that
-                actually moves the needle at your level.
+                Contact us to discuss advanced options — including private instruction,
+                conversation practice, or a plan tailored to where you already are.
               </p>
             </div>
             <div className="flex flex-col gap-2 w-full md:w-auto shrink-0">
               <ButtonLink
-                to="/enroll"
+                to="/contact"
                 size="lg"
                 icon={<ArrowRight size={16} strokeWidth={1.5} />}
               >
-                Book a consultation
+                Contact Us
               </ButtonLink>
               <ButtonLink to="/courses" size="lg" variant="secondary">
                 See all courses
@@ -274,43 +267,26 @@ export function ResultsScreen({ result, onReset }: ResultsScreenProps) {
         </Card>
       )}
 
-      {/* Email capture */}
+      {/* Save results prompt — honest, no fake email send */}
       <Card variant="default" className="p-8 mb-8">
-        {emailSubmitted ? (
-          <div className="flex items-center gap-3 text-ink">
-            <Check size={18} strokeWidth={2} className="text-accent" />
-            <span>
-              Results sent to <span className="font-medium">{email}</span>. Check your inbox.
-            </span>
+        <div className="flex items-start gap-4">
+          <div className="shrink-0 h-9 w-9 rounded-full bg-accent-soft flex items-center justify-center">
+            <ArrowRight size={16} strokeWidth={1.5} className="text-accent" />
           </div>
-        ) : (
-          <form onSubmit={handleEmailSubmit}>
-            <div className="flex items-start gap-4 mb-5">
-              <div className="shrink-0 h-9 w-9 rounded-full bg-accent-soft flex items-center justify-center">
-                <Mail size={16} strokeWidth={1.5} className="text-accent" />
-              </div>
-              <div>
-                <p className="font-display text-xl text-ink mb-1">Want your results emailed?</p>
-                <p className="text-sm text-ink-muted">
-                  Optional. We'll send a summary and your cohort recommendation.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-2 sm:pl-14">
-              <Input
-                type="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                required
-              />
-              <Button type="submit" size="md" className="sm:w-auto">
-                Send Results
-              </Button>
-            </div>
-          </form>
-        )}
+          <div>
+            <p className="font-display text-xl text-ink mb-1">Want to keep your results?</p>
+            <p className="text-sm text-ink-muted mb-4">
+              Screenshot this page or note your level ({result.level}) and recommended course before leaving. You can also contact us and mention your placement level — we will keep it on file for your enrollment.
+            </p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`My Placement Result — ${result.level}`)}&body=${encodeURIComponent(`Hi,\n\nI completed the placement test and my result was ${result.level}.\n\nI would like to learn more about ${course ? course.title : 'your available courses'}.\n\nThank you.`)}`}
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+            >
+              Email us your result
+              <ArrowRight size={14} strokeWidth={1.5} />
+            </a>
+          </div>
+        </div>
       </Card>
 
       {/* Retake */}

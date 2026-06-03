@@ -36,11 +36,11 @@ export function Footer() {
             <p className="eyebrow mb-5">Contact</p>
             <ul className="space-y-3 text-sm text-ink-muted">
               <li>
-                <a href="mailto:hello@crescere.com" className="hover:text-ink transition-colors">
-                  hello@crescere.com
+                <a href="mailto:montanarowl@gmail.com" className="hover:text-ink transition-colors">
+                  montanarowl@gmail.com
                 </a>
               </li>
-              <li>Response within 24 hours</li>
+              <li>We respond within one business day</li>
             </ul>
           </div>
         </div>

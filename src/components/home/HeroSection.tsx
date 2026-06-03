@@ -25,7 +25,7 @@ export function HeroSection() {
 
             <h1 className="display-1 text-ink max-w-3xl">
               Learn French or Spanish with{' '}
-              <span className="italic font-normal text-accent">confidence</span> in 10 weeks
+              <span className="italic font-normal text-accent">confidence</span> in 12 weeks
             </h1>
 
             <p className="mt-8 text-lg md:text-xl text-ink-muted leading-relaxed max-w-xl">
@@ -44,9 +44,9 @@ export function HeroSection() {
 
             {/* Tiny stat strip */}
             <div className="mt-14 flex flex-wrap items-center gap-x-10 gap-y-4 pt-8 border-t border-line">
-              <Stat label="Weeks" value="10" />
+              <Stat label="Weeks" value="12" />
               <Divider />
-              <Stat label="Live sessions" value="20" />
+              <Stat label="Live sessions" value="24" />
               <Divider />
               <Stat label="Students / cohort" value="5–12" />
             </div>

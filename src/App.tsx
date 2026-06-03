@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { PublicLayout } from '@/layouts/PublicLayout';
-import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { HomePage } from '@/pages/HomePage';
 import { CoursesPage } from '@/pages/CoursesPage';
 import { CourseDetailPage } from '@/pages/CourseDetailPage';
@@ -11,18 +10,10 @@ import { FAQPage } from '@/pages/FAQPage';
 import { TermsPage } from '@/pages/TermsPage';
 import { EnrollPage } from '@/pages/EnrollPage';
 import { PlacementPage } from '@/pages/PlacementPage';
+import { ContactPage } from '@/pages/ContactPage';
+import { DashboardComingSoonPage } from '@/pages/DashboardComingSoonPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import {
-  DashboardHomePage,
-  CommunityPage,
-  ResourcesPage,
-  ProfilePage,
-} from '@/pages/dashboard';
 
-/**
- * Scrolls to top on every route change. Placed inside the router so it can
- * subscribe to location changes.
- */
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -109,40 +100,25 @@ export function App() {
             </PublicLayout>
           }
         />
+        <Route
+          path="/contact"
+          element={
+            <PublicLayout>
+              <ContactPage />
+            </PublicLayout>
+          }
+        />
 
-        {/* Authenticated — Learning Dashboard */}
+        {/* Dashboard — student portal not yet available; redirect all /dashboard/* */}
         <Route
           path="/dashboard"
           element={
-            <DashboardLayout>
-              <DashboardHomePage />
-            </DashboardLayout>
+            <PublicLayout>
+              <DashboardComingSoonPage />
+            </PublicLayout>
           }
         />
-        <Route
-          path="/dashboard/community"
-          element={
-            <DashboardLayout>
-              <CommunityPage />
-            </DashboardLayout>
-          }
-        />
-        <Route
-          path="/dashboard/resources"
-          element={
-            <DashboardLayout>
-              <ResourcesPage />
-            </DashboardLayout>
-          }
-        />
-        <Route
-          path="/dashboard/profile"
-          element={
-            <DashboardLayout>
-              <ProfilePage />
-            </DashboardLayout>
-          }
-        />
+        <Route path="/dashboard/*" element={<Navigate to="/dashboard" replace />} />
 
         {/* Catch-all */}
         <Route
