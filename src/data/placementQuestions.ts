@@ -555,6 +555,7 @@ export const SPANISH_QUESTIONS: MCQuestion[] = [
     prompt: 'Complete: "Esta mañana ___ a mi jefe en el ascensor."',
     options: ['he visto', 'vi', 'veía', 'había visto'],
     correctIndex: 0,
+    correctIndices: [0, 1], // he visto (Spain) and vi (Latin America) are both correct
   },
 
   // ============= B2 (difficulty 4) =============

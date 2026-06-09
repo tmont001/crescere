@@ -141,7 +141,7 @@ function pickNextQuestion(
 
 /**
  * Adaptive difficulty target:
- *   - First question: difficulty 2 (avoids floor effect at A1).
+ *   - First question: difficulty 1 (ensures absolute beginners see an A1 question first).
  *   - Two correct in a row → +1.
  *   - Two wrong in a row → −1.
  *   - Single correct → +0.5 (rounds up).
@@ -149,7 +149,7 @@ function pickNextQuestion(
  *   Clamped to [1, 5].
  */
 function calculateDifficultyTarget(answers: MCAnswer[]): number {
-  if (answers.length === 0) return 2;
+  if (answers.length === 0) return 1;
   const last = answers[answers.length - 1];
   const prev = answers[answers.length - 2];
 
@@ -440,7 +440,9 @@ export function usePlacementEngine() {
         sectionType: 'mc',
         questionId: currentQuestion.id,
         selectedIndex,
-        correct: selectedIndex === currentQuestion.correctIndex,
+        correct: currentQuestion.correctIndices
+          ? currentQuestion.correctIndices.includes(selectedIndex)
+          : selectedIndex === currentQuestion.correctIndex,
         type: currentQuestion.type,
         category: currentQuestion.category,
         difficulty: currentQuestion.difficulty,

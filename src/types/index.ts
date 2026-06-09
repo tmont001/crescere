@@ -54,6 +54,8 @@ export interface MCQuestion {
   context?: string;
   options: string[];
   correctIndex: number;
+  /** When multiple answers are regionally valid, list all accepted indices here. Overrides correctIndex for scoring. */
+  correctIndices?: number[];
 }
 
 /** Part 2: typed short-answer questions. */
