@@ -1,9 +1,10 @@
+import { ArrowRight, Check } from 'lucide-react';
 import { Section, SectionHeader, ButtonLink } from '@/components/ui';
-import { ArrowRight } from 'lucide-react';
 
 export function AboutPage() {
   return (
     <>
+      {/* Hero */}
       <Section size="sm" variant="default">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 mb-6">
@@ -16,12 +17,82 @@ export function AboutPage() {
             <span className="italic font-normal text-accent">keep failing.</span>
           </h1>
           <p className="mt-8 text-lg md:text-xl text-ink-muted leading-relaxed">
-            Crescere exists because most language learning products optimize for retention metrics — not fluency. We built the opposite: a program designed around the one thing that actually works, which is showing up, speaking, and being accountable to real people.
+            Crescere exists because most language learning products optimize for retention
+            metrics — not fluency. We built the opposite: a program designed around the one
+            thing that actually works, which is showing up, speaking, and being accountable
+            to real people.
           </p>
         </div>
       </Section>
 
+      {/* Founder and Instructor */}
       <Section size="sm" variant="sunken">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-4">
+            <div className="sticky top-24">
+              <img
+                src="/images/thomas-montanaro-headshot.jpg"
+                alt="Thomas Montanaro, founder and instructor of Crescere"
+                className="w-full rounded-md object-cover object-top mb-6"
+                style={{ maxWidth: '320px', aspectRatio: '4/5' }}
+              />
+              <p className="font-display text-xl text-ink leading-tight">Thomas Montanaro</p>
+              <p className="text-[0.9375rem] text-ink-muted mt-1">Founder & Instructor</p>
+              <p className="eyebrow text-ink-subtle mt-1">M.S.T.</p>
+            </div>
+          </div>
+
+          <div className="lg:col-span-8">
+            <div className="inline-flex items-center gap-2 mb-6">
+              <span className="h-px w-6 bg-accent" aria-hidden />
+              <span className="eyebrow text-accent">Founder & Instructor</span>
+            </div>
+
+            <h2 className="display-2 text-ink mb-8">
+              Fifteen years in the classroom.
+              <br />
+              <span className="italic font-normal text-accent">Now available online.</span>
+            </h2>
+
+            <div className="space-y-6 text-ink-muted leading-relaxed">
+              <p>
+                After more than fifteen years teaching languages in secondary schools and higher
+                education, Thomas Montanaro founded Crescere to make serious language learning
+                more personal, structured, and accessible outside of a traditional classroom.
+              </p>
+              <p>
+                Throughout his career, Thomas has seen the difference between studying a language
+                and actually learning to use it with confidence. Students make meaningful progress
+                when they have expert guidance, consistent opportunities to speak, thoughtful
+                feedback, and a community that keeps them engaged.
+              </p>
+              <p>
+                Crescere brings that experience into a live online format: small cohorts,
+                purposeful instruction, real conversation, and a clear path forward for learners
+                who want more than an app or an unstructured tutoring session. The goal is simple:
+                help students grow into confident, capable communicators in French or Spanish.
+              </p>
+            </div>
+
+            <div className="mt-10 pt-10 border-t border-line">
+              <p className="eyebrow mb-6">Qualifications & background</p>
+              <ul className="space-y-3">
+                {CREDENTIALS.map((c) => (
+                  <li key={c} className="flex items-start gap-3">
+                    <span className="mt-1 h-4 w-4 shrink-0 rounded-full bg-accent-soft flex items-center justify-center">
+                      <Check size={10} strokeWidth={2.5} className="text-accent" />
+                    </span>
+                    <span className="text-[0.9375rem] text-ink">{c}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Teaching philosophy */}
+      <Section size="sm" variant="default">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <SectionHeader eyebrow="Philosophy" title="Structure over hype." />
@@ -47,37 +118,36 @@ export function AboutPage() {
         </div>
       </Section>
 
-      <Section size="sm" variant="default">
+      {/* Who it's for */}
+      <Section size="sm" variant="sunken">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <SectionHeader eyebrow="Who it's for" title="Four kinds of learners." />
+            <SectionHeader eyebrow="Who it's for" title="Three kinds of learners." />
           </div>
-          <div className="md:col-span-8 grid grid-cols-1 gap-5">
-            <AudienceCard
-              tag="Professionals"
-              title="Busy adults"
-              body="You want to go from survival-level to conversational fluency without adding another app to your phone. Two 1-hour sessions per week, twelve weeks, real progress."
-            />
-            <AudienceCard
-              tag="Travelers"
-              title="Frequent travelers"
-              body="You visit a country often — for work, family, or pleasure — and you're tired of leaning on translation apps. You want to operate independently when you land."
-            />
-            <AudienceCard
-              tag="Students"
-              title="College and high school students"
-              body="You're filling a gap between classes, preparing for study abroad, or making sure your classroom French or Spanish actually translates to real life."
-            />
-            <AudienceCard
-              tag="Families"
-              title="Parents and younger learners"
-              body="Learning a language as a family, or supporting a child who wants a structured course alongside school. Younger learners are welcome with a parent or guardian — reach out to confirm the cohort is the right fit."
-            />
+          <div className="md:col-span-8">
+            <div className="grid grid-cols-1 gap-5">
+              <AudienceCard
+                tag="Adults & Professionals"
+                title="Adults and professionals"
+                body="For learners studying French or Spanish for travel, work, personal growth, or cultural connection — and who want more structure, accountability, and progress than self-paced learning provides."
+              />
+              <AudienceCard
+                tag="College Students"
+                title="College students"
+                body="For students seeking stronger speaking skills, guided practice, and support alongside formal language study. Whether you are preparing for study abroad or want real conversational confidence, the cohort format provides consistent practice with peers at a similar level."
+              />
+              <AudienceCard
+                tag="High School & AP"
+                title="High school and AP students"
+                body="For motivated high school learners seeking academic reinforcement, AP-level support, stronger speaking confidence, or a more solid foundation for future study. Parents of high school students are welcome to reach out about course fit and academic support options."
+              />
+            </div>
           </div>
         </div>
       </Section>
 
-      <Section size="md" variant="sunken">
+      {/* Bottom CTA */}
+      <Section size="md" variant="default">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="display-2 text-ink">
             Still have questions?
@@ -101,6 +171,15 @@ export function AboutPage() {
   );
 }
 
+const CREDENTIALS = [
+  'New York State certified to teach French and Spanish, grades 7–12',
+  'Master of Science for Teachers in Adolescence Education',
+  'More than fifteen years of teaching experience across secondary and higher education',
+  'AP-level and college-level teaching experience',
+  'International teaching and study experience in China, France, Montréal, and Spain',
+  'Has taught French, Spanish, English, and Mandarin',
+];
+
 function Pillar({ title, body }: { title: string; body: string }) {
   return (
     <div className="pb-8 border-b border-line last:border-b-0 last:pb-0">
@@ -112,8 +191,8 @@ function Pillar({ title, body }: { title: string; body: string }) {
 
 function AudienceCard({ tag, title, body }: { tag: string; title: string; body: string }) {
   return (
-    <div className="p-7 bg-paper-raised border border-line rounded-md flex gap-8 items-start">
-      <span className="eyebrow text-accent shrink-0 w-24 mt-1">{tag}</span>
+    <div className="p-7 bg-paper border border-line rounded-md flex gap-8 items-start">
+      <span className="eyebrow text-accent shrink-0 w-28 mt-1">{tag}</span>
       <div>
         <h3 className="font-display text-xl md:text-2xl text-ink mb-2">{title}</h3>
         <p className="text-[0.9375rem] text-ink-muted leading-relaxed">{body}</p>

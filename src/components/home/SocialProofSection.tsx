@@ -1,71 +1,71 @@
-import { Quote } from 'lucide-react';
-import { Section, SectionHeader, Card } from '@/components/ui';
-import { TESTIMONIALS } from '@/data/testimonials';
-import type { Testimonial } from '@/types';
+import { GraduationCap, Mic, BookOpen, Users } from 'lucide-react';
+import { Section, SectionHeader } from '@/components/ui';
 import { cn } from '@/lib/cn';
+import type { LucideIcon } from 'lucide-react';
+
+interface CredibilityPoint {
+  icon: LucideIcon;
+  title: string;
+  body: string;
+}
+
+const CREDIBILITY_POINTS: CredibilityPoint[] = [
+  {
+    icon: GraduationCap,
+    title: 'Certified expertise',
+    body: 'Instruction led by a New York State-certified French and Spanish educator with a master\'s degree in education.',
+  },
+  {
+    icon: Mic,
+    title: 'Live speaking practice',
+    body: 'Students practice communicating in live sessions with real-time guidance and instructor feedback.',
+  },
+  {
+    icon: BookOpen,
+    title: 'A structured path forward',
+    body: 'Each twelve-week course follows a purposeful progression rather than leaving students to decide what to study next.',
+  },
+  {
+    icon: Users,
+    title: 'Small-group accountability',
+    body: 'Cohorts of 5 to 12 students provide consistent opportunities to participate, speak, and stay engaged.',
+  },
+];
 
 export function SocialProofSection() {
-  const [short1, featured1, short2, featured2, short3] = TESTIMONIALS;
-
   return (
     <Section variant="sunken" size="md">
       <SectionHeader
-        eyebrow="Student Stories"
+        eyebrow="Why Crescere"
         title={
           <>
-            Real progress.
+            Built on real
             <br />
-            <span className="italic font-normal text-accent">Real results.</span>
+            <span className="italic font-normal text-accent">teaching experience.</span>
           </>
         }
-        description="No hype. Professionals, travelers, and students describing what actually happened."
+        description="Crescere is not an automated course library or a collection of generic video lessons. Every course is shaped by more than fifteen years of language teaching experience across secondary and higher education classrooms."
       />
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-12 gap-5">
-        <TestimonialCardView t={short1} className="md:col-span-4" />
-        <TestimonialCardView t={featured1} className="md:col-span-5 md:row-span-2" featured />
-        <TestimonialCardView t={short2} className="md:col-span-3 md:translate-y-4" />
-        <TestimonialCardView t={short3} className="md:col-span-4" />
-        <TestimonialCardView t={featured2} className="md:col-span-3 md:translate-y-4" featured />
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {CREDIBILITY_POINTS.map((point) => (
+          <CredibilityCard key={point.title} {...point} />
+        ))}
       </div>
     </Section>
   );
 }
 
-function TestimonialCardView({
-  t,
-  className,
-  featured,
-}: {
-  t: Testimonial;
-  className?: string;
-  featured?: boolean;
-}) {
+function CredibilityCard({ icon: Icon, title, body }: CredibilityPoint) {
   return (
-    <Card
-      variant={featured ? 'raised' : 'default'}
-      className={cn('p-6 md:p-8 flex flex-col justify-between h-full', className)}
-    >
+    <div className={cn('p-8 bg-paper border border-line rounded-md flex flex-col gap-4')}>
+      <div className="h-11 w-11 rounded border border-line bg-paper-raised flex items-center justify-center">
+        <Icon size={18} strokeWidth={1.5} className="text-accent" />
+      </div>
       <div>
-        {featured && <Quote size={24} strokeWidth={1} className="text-accent mb-4" />}
-        <p
-          className={cn(
-            'text-ink leading-relaxed',
-            featured ? 'font-display text-xl md:text-2xl font-normal' : 'text-[0.9375rem]',
-          )}
-        >
-          {featured ? t.quote : `"${t.quote}"`}
-        </p>
+        <h3 className="font-display text-xl text-ink leading-snug mb-2">{title}</h3>
+        <p className="text-[0.9375rem] text-ink-muted leading-relaxed">{body}</p>
       </div>
-      <div className="mt-6 pt-4 border-t border-line flex items-center gap-3">
-        <div className="h-9 w-9 rounded-full bg-accent-soft flex items-center justify-center">
-          <span className="font-display text-sm text-accent">{t.name.charAt(0)}</span>
-        </div>
-        <div>
-          <p className="text-sm font-medium text-ink">{t.name}</p>
-          <p className="text-2xs uppercase tracking-wider text-ink-subtle">{t.role}</p>
-        </div>
-      </div>
-    </Card>
+    </div>
   );
 }

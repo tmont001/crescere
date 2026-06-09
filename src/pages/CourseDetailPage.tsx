@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, CalendarDays, Check, Clock, Users } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CalendarDays, Check, Clock, GraduationCap, Users } from 'lucide-react';
 import { Section, Card, Badge, ButtonLink } from '@/components/ui';
 import { getCourseById } from '@/data/courses';
 import { getNextCohortForCourse, COHORTS } from '@/data/cohorts';
@@ -179,7 +179,32 @@ export function CourseDetailPage() {
           </div>
         </Section>
       )}
+
+      <Section size="sm" variant="sunken">
+        <InstructorCard />
+      </Section>
     </>
+  );
+}
+
+function InstructorCard() {
+  return (
+    <div className="flex flex-col sm:flex-row sm:items-center gap-6 p-7 bg-paper border border-line rounded-md">
+      <div className="h-14 w-14 rounded-full bg-accent-soft flex items-center justify-center shrink-0">
+        <GraduationCap size={24} strokeWidth={1.5} className="text-accent" />
+      </div>
+      <div className="flex-1">
+        <p className="eyebrow mb-1">Your Instructor</p>
+        <p className="font-display text-xl text-ink leading-tight mb-0.5">Thomas Montanaro, M.S.T.</p>
+        <p className="text-[0.9375rem] text-ink-muted">
+          New York State-certified French and Spanish educator · More than 15 years of teaching
+          experience
+        </p>
+      </div>
+      <ButtonLink to="/about" size="sm" variant="secondary" icon={<ArrowRight size={14} strokeWidth={1.5} />}>
+        About Your Instructor
+      </ButtonLink>
+    </div>
   );
 }
 

@@ -95,8 +95,8 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'q14',
     category: 'program',
-    question: 'Is this program suitable for high school students or younger learners?',
+    question: 'Is this program suitable for high school students?',
     answer:
-      'Yes. The program welcomes adult learners, college students, high school students, and younger learners accompanied by a parent or guardian. If you are enrolling a younger student, please mention this when you reach out so we can confirm the cohort is a good fit.',
+      'Yes. Crescere welcomes adult learners, college students, and motivated high school and AP students seeking academic reinforcement, stronger speaking confidence, or a structured foundation. Parents of high school students are welcome to reach out with questions about course fit and what the program involves.',
   },
 ];

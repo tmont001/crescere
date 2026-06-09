@@ -67,8 +67,8 @@ export function ContactPage() {
                 body="If your placement result was B2 or C1, our group cohorts may not be the right fit. Email us to discuss private instruction or advanced options."
               />
               <ContactTopic
-                title="Parents and younger learners"
-                body="The program is open to adult learners, college and high school students, and younger learners with a parent or guardian. Reach out if you have questions about suitability for a specific age group."
+                title="Parents of high school students"
+                body="If you are a parent exploring language support or academic reinforcement for a high school or AP student, we welcome your questions about course fit, level placement, and what the program involves."
               />
             </ul>
           </div>

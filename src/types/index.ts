@@ -16,14 +16,6 @@ export type PlacementCategory =
   | 'sentence-structure'
   | 'real-world-usage';
 
-export interface Testimonial {
-  id: string;
-  quote: string;
-  name: string;
-  role: string;
-  featured?: boolean;
-}
-
 export interface Course {
   id: string;
   level: CourseLevel;

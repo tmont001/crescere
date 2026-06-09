@@ -4,6 +4,7 @@ import {
   HowItWorksSection,
   CourseLevelsSection,
   WhatYouGetSection,
+  InstructorSection,
   PricingSection,
   CohortUrgencySection,
   FinalCTASection,
@@ -17,6 +18,7 @@ export function HomePage() {
       <HowItWorksSection />
       <CourseLevelsSection />
       <WhatYouGetSection />
+      <InstructorSection />
       <PricingSection />
       <CohortUrgencySection />
       <FinalCTASection />
