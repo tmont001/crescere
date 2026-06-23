@@ -1,0 +1,177 @@
+# Spanish A1 — Beginner Spanish
+## Course Syllabus
+
+---
+
+## Course at a Glance
+
+| | |
+|---|---|
+| **Duration** | 12 weeks |
+| **Sessions** | 24 live sessions (2 per week) |
+| **Session length** | 1 hour each |
+| **Format** | Live, small group via Google Meet |
+| **Homework** | Approximately 20–30 minutes after each class |
+| **Prerequisites** | None |
+
+---
+
+## Who This Course Is For
+
+This course is designed for:
+
+- **Absolute beginners** — no prior Spanish required
+- **Returning learners** — studied Spanish years ago and want to rebuild
+- **Motivated adults and college students** who want to speak, not just memorize grammar rules
+- **High school and AP students** who want to strengthen their spoken Spanish alongside their coursework (parent or guardian involvement is welcome where appropriate)
+
+You do not need to know any Spanish before Session 1. The course starts from zero.
+
+---
+
+## What You Will Be Able to Do by the End
+
+By the end of Spanish A1, you will be able to:
+
+- Introduce yourself — name, where you're from, what you do — and ask others the same
+- Describe people and situations using *ser* and *estar* — the two Spanish verbs for "to be" — correctly
+- Talk about your daily routine, your family, and your home
+- Navigate real situations: ordering at a café or restaurant, asking for directions, shopping
+- Discuss upcoming plans and express what you need to do or can do
+- Handle a basic pharmacy or health-related conversation
+- Write a short personal message of 8–10 sentences in Spanish
+- Understand slow, clear spoken Spanish on topics you have studied
+
+**A word on expectations:** A1 is a solid beginner foundation. You will not be fluent at the end of this course. You will, however, have enough Spanish to handle real situations and the skills to keep improving.
+
+---
+
+## A Note on Ser and Estar
+
+Spanish has two verbs where English only has one: "to be." They are *ser* and *estar*, and which one you use changes the meaning of a sentence. This distinction is the most important grammar point in Spanish A1 — and one of the most interesting things about the language.
+
+We introduce it carefully in Week 2 and return to it throughout the course. By the end of Week 2, you will understand the core logic. By the end of the course, it will begin to feel natural.
+
+You do not need to worry about it before class. The course is designed to build this understanding step by step.
+
+---
+
+## Course Philosophy
+
+**Speaking starts in Session 1.** You will say Spanish words out loud in your very first class. The course is built around doing, not just studying.
+
+**Grammar supports conversation.** You will learn grammar, but in the order it helps you say things — not in the order of a textbook. Grammar rules are always introduced alongside the phrases that use them.
+
+**Mistakes are expected.** Every person in your cohort is a beginner. Your instructor expects mistakes. The only thing that slows progress is staying quiet.
+
+**Homework is short and consistent.** Each assignment is designed to fit in 20–30 minutes. The goal is daily repetition — especially speaking aloud — not hours of study.
+
+**Active participation is required.** This is a live course, not a video series. You will be asked to speak, answer questions, and practice with other students in every session.
+
+---
+
+## 12-Week Course Outline
+
+| Week | Theme | What you will practice saying | Grammar focus |
+|---|---|---|---|
+| 1 | Sounds and greetings | Greet someone; introduce yourself; count to 100 | *Ser* (to be); formal vs. informal register (*tú* / *usted*) |
+| 2 | *Ser* vs. *estar* | Describe who you are vs. how you feel or where you are | *Estar*; the *ser* / *estar* distinction; meaning-changing adjectives |
+| 3 | Daily routines and verbs | Talk about what you do each day | Regular -ar, -er, and -ir verbs; reflexive verbs; negation |
+| 4 | Time, dates, and family | Tell time; discuss your schedule; describe your family | *Tener* (to have); possessive adjectives; telling time |
+| 5 | Getting around a city | Ask for and give directions | Prepositions of place; *ir* (to go) |
+| 6 | Food and eating out | Talk about food preferences; order at a café or restaurant | *Gustar* structure; *querer* (to want) |
+| 7 | Shopping | Shop for clothes; buy food at a market | Demonstratives; quantities; colors |
+| 8 | Home and neighborhood | Describe where you live | *Hay* (there is / there are); location prepositions |
+| 9 | Plans and obligations | Talk about what you are going to do; say what you must or can do | *Ir a* + infinitive; *tener que*; *poder* |
+| 10 | Hobbies and leisure | Talk about your interests and free time | *Jugar a*; *hacer*; frequency adverbs |
+| 11 | Health and the body | Describe how you feel; navigate a pharmacy | Body vocabulary; *doler* structure |
+| 12 | Review and final performance | Everything from weeks 1–11 in real scenarios | Full A1 integration |
+
+---
+
+## Homework Expectations
+
+After most sessions, you will receive a short homework assignment. Typical assignments include:
+
+- **Speaking practice** — saying a phrase, dialogue, or introduction out loud at home, multiple times
+- **Short writing** — 4–8 sentences on a familiar topic from that week
+- **Vocabulary review** — reading through a word list and practicing pronunciation
+- **Grammar drills** — usually a short written exercise with an answer key so you can check yourself
+
+Homework is designed to stay under 30 minutes. If something consistently takes longer, let the instructor know.
+
+The most important habit to build is **speaking aloud**, not silently. Reading Spanish in your head and saying it out loud feel completely different. The homework is designed to make you speak.
+
+---
+
+## Assessment and Feedback
+
+This is not a high-pressure exam course. You will not receive letter grades on each assignment.
+
+**Formative checks** happen at five points during the course (after weeks 1, 5, 7, 9, and 11). These are brief spoken or written check-ins — usually 5–10 minutes — that help the instructor see where everyone is and what needs more practice. They are not graded. They inform how the following sessions are run.
+
+**Your instructor will give you feedback** after speaking activities and on written assignments. Corrections are specific and targeted — the goal is always to help you say something more clearly or accurately.
+
+---
+
+## Final Performance Task
+
+At the end of Week 12, you will complete two short tasks:
+
+**Part A — Spoken role play (5–7 minutes)**
+You and the instructor will work through a combined scenario: meeting someone, exchanging personal information, making a plan, and giving directions. You will need to use the language from all 12 weeks naturally and in context — including *ser* and *estar* correctly. Notes are not permitted.
+
+**Part B — Written message (8–10 sentences)**
+You will write a short note in Spanish: introduce yourself, describe your daily routine, and suggest a plan for getting together with a Spanish-speaking contact. This is done at home and submitted before the final session.
+
+Both tasks are designed to show what you can do with Spanish, not to catch you out on grammar rules. If you have attended class and done the homework, you will be ready for them.
+
+---
+
+## Readiness for Spanish A2
+
+You are ready for A2 when you can:
+
+- Give a complete self-introduction without preparation
+- Use *ser* and *estar* correctly in common situations without visible hesitation
+- Conjugate regular -ar, -er, and -ir verbs and high-frequency irregular verbs (*tener, ir, hacer, querer, poder, saber*) accurately
+- Navigate three or more real scenarios (café, shopping, directions) without looking things up
+- Describe your daily routine in six or more connected sentences
+- Use *ir a* + infinitive to talk about upcoming plans
+- Use the *gustar* and *doler* structures correctly
+- Write 8–10 grammatically sound simple sentences on a topic you know
+
+A2 focuses on talking about the past — the pretérito and imperfecto. A1 is the foundation that makes that possible.
+
+---
+
+## Materials
+
+**What you need:**
+- A notebook or dedicated document for written work
+- Reliable internet and audio/video access for Google Meet
+- A willingness to speak out loud — including when it feels awkward
+
+**What is provided:**
+- Session materials and vocabulary lists (digital)
+- Homework assignments (digital, distributed before each session)
+- A *ser* vs. *estar* reference chart you will use throughout the course
+- Pronunciation references and grammar handouts as needed
+
+**Textbook:** No required textbook. If a supplementary resource is selected later, it will be communicated in advance.
+
+---
+
+## What Student Success Looks Like
+
+Students who get the most out of this course typically do five things:
+
+1. **Show up to every live session.** The course moves at a set pace. Missing a session means missing the speaking practice — not just the content.
+2. **Speak during class.** Even when uncertain. Especially when uncertain.
+3. **Complete homework the same day.** The 20–30 minutes right after class (or later that evening) is when the material is freshest.
+4. **Practice aloud at home.** Reading Spanish silently is not the same as saying it. Use your voice.
+5. **Ask questions early.** If something is confusing by the end of Session 2, it will still be confusing in Week 6. Say so.
+
+---
+
+> **Note:** This is a draft student-facing syllabus. Review all sections for accuracy before sending to enrolled students or prospective families. Verify session dates, final performance task details, and any platform-specific instructions before distribution.
