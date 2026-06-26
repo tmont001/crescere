@@ -20,7 +20,7 @@ By the end of Week 9, students can:
 
 **Relationship to the curriculum:** This is exactly the Week 9 content specified in the curriculum. Session 17 = *ir a + infinitivo* + *pensar + infinitivo* + future time expressions. Session 18 = *tener que / hay que / poder* + combined planning scenarios.
 
-**Prior knowledge students bring:** *Ir* conjugation (Week 5); *poder* and *querer* (Week 6); *tener* conjugation (Week 4); *hay* (Week 8). All modal structures build on known conjugations. Only *pensar* (e→ie) and *hay que* are entirely new.
+**Prior knowledge students bring:** *Poder* and *querer* (Week 6); *tener* conjugation (Week 5); *hay* (Week 8). *Ir* is introduced for the first time in Session 17 — begin with a full paradigm presentation (voy/vas/va/vamos/vais/van) before moving to *ir a + infinitivo*. *Pensar* (e→ie stem change) and *hay que* are also new this week.
 
 ---
 
@@ -75,11 +75,11 @@ By the end of Week 9, students can:
 
 ## Suggested Instructor Language
 
-- **For *ir a + infinitivo*:** *"You already know 'voy al banco' — going to a place. Now we add an action: 'voy a trabajar.' Same conjugation of ir that you know from Week 5. The only new part is what comes after: a + infinitive. This is the simplest and most natural way to talk about future plans in Spanish — every native speaker uses it every day."*
+- **For *ir a + infinitivo*:** *"Ir is one of the most important irregular verbs in Spanish — and we're learning it now. The conjugation is: voy, vas, va, vamos, vais, van. Nothing looks like the infinitive ir, so memorize these six. Now: once you have the conjugation, near-future is simple — just add a + infinitivo after it. Voy a trabajar mañana. Vamos a cenar esta noche. Voy a llamarte mañana. That's it. Every native speaker uses this structure every single day."*
 
 - **For the difference between *ir a* and *pensar + inf*:** *"'Voy a ir al gimnasio' — I'm going to go to the gym (fairly definite). 'Pienso ir al gimnasio' — I'm thinking of going to the gym (softer, more of an intention). At this level, don't overthink it. Use *ir a* when you're fairly sure; use *pienso* when you're still not certain."*
 
-- **For *tener que*:** *"Tener que — you have to. It's personal. 'Tengo que trabajar mañana' means specifically me, not everyone. The same tener you know from Week 4: tengo, tienes, tiene... just add 'que' + infinitive after. Think of 'tener que' as one fixed unit — it always stays together."*
+- **For *tener que*:** *"Tener que — you have to. It's personal. 'Tengo que trabajar mañana' means specifically me, not everyone. The same tener you know from Week 5: tengo, tienes, tiene... just add 'que' + infinitive after. Think of 'tener que' as one fixed unit — it always stays together."*
 
 - **For *hay que* vs. *tener que*:** *"Hay que is general — it's like saying 'one must' or 'you have to' in the general sense. No subject, never changes: 'Hay que estudiar' — it's necessary to study. If you want to say YOU specifically have to, use tener que: 'Tengo que estudiar.' Hay que is about rules or general necessity; tener que is about your personal obligation."*
 

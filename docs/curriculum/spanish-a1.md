@@ -401,6 +401,8 @@ A student is ready for A2 when they can:
 - **Regional vocabulary:** Introduce Spain vs. Latin American alternatives naturally throughout (billete/boleto, coger/tomar, el coche/el carro, el piso/el apartamento). Do not overwhelm students with exhaustive lists — flag the most common pairs when they arise.
 - **Vosotros:** Present the vosotros forms in conjugation tables but clarify they are Spain-only. Latin American learners will only encounter ustedes. Adjust emphasis based on cohort's target region.
 - **Doler (Session 21):** Students who have just learned gustar should recognize this as the same structure. Make that connection explicit — it reinforces both structures simultaneously.
+- **Getting-around skills are distributed, not concentrated in one week.** The original curriculum planned a standalone Week 5 for city navigation. In the built materials, these skills are spread across three weeks: city places vocabulary and interior/location prepositions appear in Week 8 (Sessions 15–16); *ir a + infinitivo* is formally introduced in Week 9 (Session 17); directional navigation phrases (*todo recto, a la derecha, a la izquierda*) are consolidated in Session 23 as part of final performance preparation. See the Week 8 instructor notes for guidance on introducing navigation direction phrases before Session 23.
+- **Ir conjugation is introduced in Week 9 (Session 17)** — not in a prior week. The Week 9 pacing assumes no prior ir teaching. Begin Session 17 with the full paradigm (voy/vas/va/vamos/vais/van) before introducing *ir a + infinitivo*.
 
 ---
 

@@ -84,7 +84,7 @@
   - *entre* (between): *El despacho está entre el dormitorio y el salón.*
   - *al lado de* (next to): *El armario está al lado de la cama.*
   - *al fondo de* (at the far end of): *El despacho está al fondo del pasillo.*
-- Address *del* immediately: "When *de* is followed by *el*, they contract to *del.* This is mandatory — you can never say 'de el' in Spanish. You already know *a + el = al* from Week 5 (al banco, al supermercado). The same thing happens: *de + el = del.* So: 'al lado **del** salón,' not 'al lado de el salón.'"
+- Address *del* immediately: "When *de* is followed by *el*, they contract to *del.* This is mandatory — you can never say 'de el' in Spanish. The same thing happens with *a + el = al* — both contractions are required. So: 'al lado **del** salón,' not 'al lado de el salón.'"
 - Quick drill: instructor says two items; student places one using a preposition.
   - *la cama / la ventana* → *La cama está delante de la ventana.*
   - *el sofá / la televisión* → *El sofá está delante de la televisión.*

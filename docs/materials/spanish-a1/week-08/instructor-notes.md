@@ -80,7 +80,7 @@ By the end of Week 8, students can:
 
 - **For *no hay*:** *"'No hay' is simpler than French 'il n'y a pas de' — there's no extra 'de' needed. Just 'no hay' plus the noun without any article: 'No hay garaje.' Not 'no hay un garaje' — drop the article after 'no hay.'"*
 
-- **For *del* contraction:** *"Remember: 'a + el = al' from Week 5 (al banco, al supermercado). The same thing happens with 'de + el = del.' So: 'al lado del salón,' not 'al lado de el salón.' The contraction is mandatory in Spanish."*
+- **For *del* contraction:** *"You've seen 'a + el = al' already — the same kind of contraction now happens with 'de + el = del.' So: 'al lado del salón,' not 'al lado de el salón.' The contraction is mandatory in Spanish — you can never say 'de el.'"*
 
 - **For *hacer*:** *"'Hacer' is irregular only in yo: hago. All other forms are regular -er endings. This makes it easier than it looks. The most useful expressions with hacer: 'hacer la compra' (grocery shopping), 'hacer deporte' (exercise), 'hacer una pregunta' (ask a question), and weather: 'hace frío/calor/sol.'"*
 
@@ -113,3 +113,19 @@ If Session 16 irregular verbs overrun:
 - **Housing vocabulary — regional:** *El piso* (Spain) / *el apartamento, el departamento* (Latin America). *La nevera* (Spain, colloquial) / *el frigorífico* (Spain, formal) / *el refrigerador* (Latin America). Students should know one variant from each pair; both are widely understood.
 - **Spanish apartment sizes:** Similar to French — Spaniards describe apartments by number of *habitaciones* (bedrooms). A *piso de dos habitaciones* has two bedrooms (the salon is not counted). *Un estudio* = one main room. *Un ático* in Spain often refers to a top-floor apartment with a terrace — not an attic.
 - **El barrio:** Neighborhood identity is very strong in Spanish and Latin American cities. In Buenos Aires, neighborhoods (*barrios*) have distinct personalities (La Boca, Palermo, San Telmo). In Madrid, *el Barrio de las Letras, la Latina, Malasaña.* In Mexico City, *Condesa, Roma, Coyoacán.* Students who know their target city can personalize the speaking round.
+
+---
+
+## Navigation Phrases — Session 23 Prerequisite
+
+Session 23 (Week 12) asks students to give city directions using *todo recto, a la derecha, a la izquierda, al final de la calle,* and *enfrente de.* These phrases are not in the Week 8 pacing blocks, and they do not appear in any prior session.
+
+If Session 16 has time after the neighborhood vocabulary block, introduce the three core navigation direction phrases:
+
+- *Todo recto* — straight ahead
+- *A la derecha* — to the right / turn right
+- *A la izquierda* — to the left / turn left
+
+These pair naturally with the city places already in Session 16 (*una farmacia, un banco, un supermercado*). A 5-minute practice round — *"¿Cómo llego al banco? — Sigue todo recto y gira a la derecha"* — is enough for a first exposure.
+
+If Session 16 is tight, assign the three phrases as vocabulary homework. Session 23 will open with a brief direction-giving warm-up, but students who have never seen *todo recto / a la derecha / a la izquierda* will struggle with the final performance direction task.

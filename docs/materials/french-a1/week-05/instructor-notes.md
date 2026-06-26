@@ -16,7 +16,7 @@ By the end of Week 5, students can:
 
 **The à/au/à la/à l' rule** is the main grammar challenge of this week. Teach it as a functional pattern with examples, not as an abstract rule about article contraction. Students who can say *je vais au café / à la banque / à l'école* correctly are meeting the Week 5 target — they do not need to be able to articulate the rule under pressure.
 
-**Relationship to the curriculum:** The curriculum places *aller*, prepositions, and city places in Week 5 (Sessions 9–10). This aligns directly with the task. Note that -ir and -re verbs (deferred from Week 4) are not covered this week — they will be picked up systematically in Week 6 when the verb inventory expands.
+**Relationship to the curriculum:** The curriculum places *aller*, prepositions, and city places in Week 5 (Sessions 9–10). This aligns directly with the task. Note that -ir and -re verbs (deferred from Week 4) are not covered this week and do not have a dedicated grammar block in this course. High-frequency irregular -ir verbs (venir) and -re verbs (prendre) appear in context in Week 8 (Session 16). The regular finir/vendre paradigm is extension material; direct motivated students to the vocabulary reference.
 
 ---
 

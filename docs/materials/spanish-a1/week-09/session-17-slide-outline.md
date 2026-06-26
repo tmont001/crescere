@@ -4,7 +4,7 @@
 **Session length:** 50 minutes (on plan) — can run 60 min for slower cohorts
 **Session-end goal:** Every student can describe 4–5 upcoming plans in connected sentences, using *ir a + infinitivo* with accurate future time expressions.
 
-> **Pacing note:** The week-plan speaking round (Slide 6) is non-negotiable. Every student speaks before the session ends. Compress the *pensar* block (Slide 5) to 3 minutes or move it entirely to extension. *Ir a + infinitivo* itself is low risk — students already know *ir.* The time expressions and planning vocabulary need the most drilling time.
+> **Pacing note:** The week-plan speaking round (Slide 6) is non-negotiable. Every student speaks before the session ends. Compress the *pensar* block (Slide 5) to 3 minutes or move it entirely to extension. *Ir* conjugation is new this session — build the paradigm on the board before moving to *ir a + infinitivo*. The time expressions and planning vocabulary need the most drilling time after that.
 
 ---
 
@@ -23,10 +23,13 @@
 ### Slide 2 — Ir a + Infinitivo: Structure (8 min)
 **Purpose:** Students understand the structure and can produce it immediately.
 **Teacher notes:**
-- Build the structure on the board step by step:
-  1. *Voy al banco.* — going to a place (already known from Week 5)
-  2. *Voy a trabajar mañana.* — going to do something (new use)
-  3. "Same *ir*, same conjugation you know from Week 5. The only new thing: *a* + infinitive of what you're going to do."
+- Introduce ir conjugation first — it is new this session:
+  - Write on the board: voy / vas / va / vamos / vais / van
+  - Drill chorally; note that the forms look nothing like the infinitive ir
+- Then build the structure step by step:
+  1. *Voy al banco.* — going to a place (using the ir conjugation just learned)
+  2. *Voy a trabajar mañana.* — going to do something (new use of ir)
+  3. "Same ir conjugation — the only new thing: *a* + infinitive of what you're going to do."
 - Full structure: *ir (conjugado) + a + infinitivo*
 - Write all 6 forms with an example infinitive:
   - *voy a trabajar, vas a llamar, va a salir, vamos a cenar, vais a viajar, van a tomar*

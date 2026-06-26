@@ -30,7 +30,7 @@ None.
 By the end of French A1, students can:
 
 - [ ] Use être and avoir correctly in present tense
-- [ ] Conjugate regular -er, -ir, -re verbs and the core irregulars: aller, venir, faire, prendre, pouvoir, vouloir, devoir, savoir, connaître
+- [ ] Conjugate regular -er verbs and the core irregulars: aller, venir, faire, prendre, pouvoir, vouloir, devoir, savoir, connaître; recognize regular -ir (finir pattern) and -re (vendre pattern) — these do not have a dedicated grammar block in this course
 - [ ] Handle transactional exchanges: introductions, café orders, directions, shopping
 - [ ] Describe themselves, their family, daily routine, home, and city
 - [ ] Use numbers, dates, time expressions, and the days/months accurately
@@ -390,7 +390,7 @@ Note to a French contact: introduce yourself, describe your daily routine, and s
 A student is ready for A2 when they can:
 
 - [ ] Use être and avoir in all forms without hesitation
-- [ ] Conjugate regular -er/-ir/-re verbs and the core irregulars (aller, faire, venir, prendre, pouvoir, vouloir, devoir) accurately
+- [ ] Conjugate regular -er verbs and the core irregulars (aller, faire, venir, prendre, pouvoir, vouloir, devoir) accurately; note: the regular -ir (finir) and -re (vendre) paradigms are not taught in this course — students learn venir and prendre as high-frequency irregulars only
 - [ ] Navigate 3+ transactional scenarios (café, directions, shopping) without preparation
 - [ ] Describe their daily routine in 6+ sentences using reflexive and regular verbs
 - [ ] Use aller + infinitif for near-future plans
