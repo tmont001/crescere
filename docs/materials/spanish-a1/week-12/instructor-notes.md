@@ -88,6 +88,8 @@ See `week-12-final-performance.md` for the full specification. Summary:
 - *"¿Estás cansado/a hoy?"* (estar — current state)
 This ensures the distinction gets live practice before Session 24.
 
+**Direction phrases display:** Before drill 3 in the Slide 5 scenario practice block, write on the board: *todo recto / a la derecha / a la izquierda / al lado de / enfrente de.* These phrases appear in the Week 12 vocabulary file and in the Session 23 homework, but may not have been drilled before Session 23 (see Week 8 instructor notes). Board support is appropriate in Session 23 — the goal is fluency in Session 24.
+
 **Doler review (if needed):** If the Week 11 formative check showed *doler* was still shaky, add one *doler* sentence to the model role play scenario: the stranger mentions they have a sore foot and asks where the pharmacy is. This gives *doler* and directions in the same exchange — realistic and efficient.
 
 **Saber vs. conocer (if time):** During the directions drill, ask: *"¿Conoces este barrio?"* or *"¿Sabes si hay un supermercado cerca?"* This activates the Week 8 distinction without making it a focus.

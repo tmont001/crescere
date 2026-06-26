@@ -78,7 +78,7 @@
 - Run as four short drills (3–4 min each):
   1. **Introductions + ser/estar:** Students introduce themselves — name, origin, profession (*ser*), plus one thing about how they feel or where they are right now (*estar*). Two *ser* sentences; one *estar* sentence minimum.
   2. **Making plans:** Propose an activity using *ir a + infinitivo* + negotiate a time.
-  3. **Directions:** Instructor calls out a city place; student gives directions using prepositions and *al* contraction.
+  3. **Directions (board display first):** Before starting this drill, write on the board: *todo recto / a la derecha / a la izquierda / al lado de / enfrente de.* Give students 20 seconds to read them — for some students this is their first in-class exposure to these phrases. Then: Instructor calls out a city place; student gives at least 4 direction steps. Students may reference the board during this drill. The goal is fluency by Session 24, not by Session 23.
   4. **Describing a place:** 3–4 sentences about home or neighbourhood — mix *hay, está, son.*
 - Correct one item per student per drill. **Priority target: ser/estar confusion on adjectives.**
 - For small groups: instructor participates in each drill.
