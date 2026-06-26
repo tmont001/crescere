@@ -15,6 +15,12 @@
 
 ---
 
+## Formative Check
+
+The Week 1 formative check is filed at `week-01/week-01-formative-check.md`. Administer it at the start of Session 3 — before introducing any Week 2 content — to see which Week 1 items need a brief review.
+
+---
+
 ## Pacing Guidance
 
 ### Session 3 (60 min)

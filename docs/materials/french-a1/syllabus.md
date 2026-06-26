@@ -162,4 +162,4 @@ Students who get the most out of this course typically do five things:
 
 ---
 
-> **Note:** This is a draft student-facing syllabus. Review all sections for accuracy before sending to enrolled students or prospective families. Verify session dates, final performance task details, and any platform-specific instructions before distribution.
+Specific cohort dates, meeting times, and enrollment details are confirmed before each course begins.

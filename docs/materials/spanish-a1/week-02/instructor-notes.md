@@ -17,6 +17,12 @@ Full mastery of ser vs. estar distinction is a *course objective*, not a Week 2 
 
 ---
 
+## Formative Check
+
+The Week 1 formative check is filed at `week-01/week-01-formative-check.md`. Administer it at the start of Session 3 — before introducing any Week 2 content — to see which Week 1 items need a brief review.
+
+---
+
 ## Session 3 Pacing — Estar, Emotions, Location
 
 **Theme:** What is estar? How does it feel in use?

@@ -16,7 +16,7 @@ By the end of Week 4, students can:
 
 Full mastery of all six reflexive forms and all three verb families is not a Week 4 requirement. *Me, te, se* are the priority for reflexive verbs. The *yo, tú, él/ella* forms are the priority for -er/-ir verbs.
 
-**Stem-changing verbs:** *despertarse* (e→ie) and *acostarse* (o→ue) are stem-changing reflexive verbs that appear naturally in daily routine vocabulary. Introduce their *me* forms as phrases to use; do not teach the stem-change paradigm fully. Flag that the *nosotros* form does not change (*nos despertamos, nos acostamos*). Full stem-change coverage is Week 6.
+**Stem-changing verbs:** *despertarse* (e→ie) and *acostarse* (o→ue) are stem-changing reflexive verbs that appear naturally in daily routine vocabulary. Introduce their *me* forms as phrases to use; do not teach the stem-change paradigm fully. Flag that the *nosotros* form does not change (*nos despertamos, nos acostamos*). Stem-changing verbs are introduced as they arise throughout the course — students encounter the pattern in *querer* (Week 6) and it is addressed more fully with *preferir* (e→ie) during the hobbies and preferences work in Week 10.
 
 **Relationship to the curriculum:** The curriculum places time/dates and *tener* + family vocabulary in Week 4. Given the Week 3 deferral of -er/-ir verbs and reflexive verbs, Week 4 covers those deferred topics. Basic time-reading is included as a support skill for routine narration. Full telling-time, *tener*, and family vocabulary are deferred to Week 5.
 

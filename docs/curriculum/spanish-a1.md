@@ -51,9 +51,9 @@ By the end of Spanish A1, students can:
 |---|---|---|---|
 | 1 | Sounds and greetings | Ser — full present; formal/informal (tú/usted) | Pronunciation, introductions, numbers |
 | 2 | Ser vs. estar: the core distinction | Estar — full present; ser vs. estar with adjectives | Describing states vs. identity |
-| 3 | Regular verbs and daily routine | -ar/-er/-ir verbs; reflexive verbs | Narrating a daily routine |
-| 4 | Time, dates, and family | Tener; possessive adjectives; days/months | Telling time; family descriptions |
-| 5 | Getting around | Prepositions of place; ir + a + lugar | Directions; navigation scenarios |
+| 3 | Regular -ar verbs and daily routine | -ar verbs; negation; frequency adverbs; reflexive preview | Daily routine narration in 4–5 sentences |
+| 4 | Regular -er/-ir verbs, reflexive verbs, and full routine | -er/-ir verbs; reflexive verbs; basic clock times | Full routine narration; three verb families |
+| 5 | Tener, family, and possessives | Tener + años/expressions; possessives mi/tu/su; family vocabulary | Age and family description |
 | 6 | Food and eating out | Gustar structure; querer/quisiera; partitive in context | Ordering food; café/restaurant scenarios |
 | 7 | Shopping | Demonstratives; quantities; prices; colors | Shopping dialogues; market scenarios |
 | 8 | Home and neighborhood | Hay / no hay; prepositions; irregular verb review | Describing home; neighborhood vocabulary |
@@ -104,39 +104,43 @@ By the end of Spanish A1, students can:
 - Speaking: Sentence building from verb prompts; negation drills; describing activities
 - Session-end goal: Student can conjugate and use 8+ -ar verbs in affirmative and negative sentences
 
-**Session 6 — -er and -ir Verbs; Reflexive Verbs**
-- Grammar: Regular -er verbs: comer/beber/leer/comprender/vender; regular -ir verbs: vivir/escribir/abrir/subir/recibir; reflexive verbs: levantarse, llamarse, acostarse, ducharse, vestirse — with reflexive pronouns (me/te/se/nos/os/se); daily routine: ¿A qué hora te levantas?
-- Speaking: Full daily routine narration; Primero me levanto, luego me ducho, después desayuno...
-- Session-end goal: Student can narrate their complete daily routine using reflexive and regular verbs
+**Session 6 — Negation, Frequency, and Daily Routine**
+- Grammar: Negation: no + verb drilled and contrasted with ser/estar; nunca introduced (no trabajo nunca / nunca trabajo — both forms explained); frequency adverbs: siempre, normalmente, a veces, casi nunca, nunca; -er and -ir verbs deferred to Week 4; reflexive verbs previewed as phrases only (me levanto, me acuesto) — pronoun paradigm not yet taught
+- Speaking: Daily routine narration in 4–5 sentences using sequencing words (primero, luego, después, por último) and time-of-day expressions (por la mañana, por la tarde, por la noche); negation drills; frequency expressions in first-person sentences
+- Vocabulary: Sequencing words; time-of-day expressions; frequency adverbs
+- Session-end goal: Student can narrate their daily routine in 4–5 sentences using -ar verbs with correct negation and 3–4 frequency expressions
 
 ---
 
-### Week 4 — Time, Dates, and Family
+### Week 4 — Regular Verbs, Reflexive Verbs, and Daily Routine
 
-**Session 7 — Telling Time and Dates**
-- Grammar: Telling time: es la una / son las tres y media / a las ocho menos cuarto; 12h vs. 24h; days of the week (no article with scheduled days); months; seasons; ¿Qué hora es? ¿Cuándo es tu cumpleaños? ¿Qué día es hoy?
-- Speaking: Time-telling scenarios; scheduling appointments; discussing weekly routine
-- Session-end goal: Student can tell time and discuss dates and schedules fluently
+**Session 7 — Regular -er and -ir Verbs**
+- Grammar: Regular -er verb pattern: comer → como/comes/come/comemos/coméis/comen; comparison table -ar vs. -er endings; 5 core -er verbs (comer, beber, leer, comprender, vender); regular -ir verbs: vivir — nearly identical to -er, only nosotros (-emos vs. -imos) and vosotros (-éis vs. -ís) differ; 4 core -ir verbs (vivir, escribir, abrir, subir); three-family side-by-side comparison (-ar/-er/-ir)
+- Speaking: Sentence building using -er and -ir verbs about oneself; speaking round — each student produces one -ar, one -er, one -ir sentence; full time-telling (half-hours, quarter-hours, 24h) deferred to Week 5
+- Vocabulary: High-frequency -er and -ir verbs; three-family ending contrast
+- Session-end goal: Student can produce -er and -ir verb sentences and identify which family any given regular verb belongs to
 
-**Session 8 — Tener and Family**
-- Grammar: Tener — full present: tengo/tienes/tiene/tenemos/tenéis/tienen; tener for possession and family; tener expressions: tener hambre/sed/frío/calor/sueño/miedo/razón (contrasting with estar for some emotions); possessive adjectives: mi/tu/su/nuestro/vuestro/su (and plural forms)
-- Speaking: Describing family: tengo dos hermanos, mi madre tiene 55 años; family tree practice
-- Session-end goal: Student can describe family using tener and possessive adjectives correctly
+**Session 8 — Reflexive Verbs and Full Routine Narration**
+- Grammar: Reflexive verbs — concept and pronoun table (me/te/se/nos/os/se); students already know me llamo (same structure); priority forms me/te/se; core verbs: levantarse, ducharse, prepararse, acostarse, despertarse; stem-changing forms (me despierto, me acuesto) introduced as phrases only; basic clock times (son las + number, es la una, a las + hour); tener and family vocabulary deferred to Week 5
+- Speaking: Full morning-to-evening routine narration in 5–6 sentences mixing reflexive and -ar/-er verbs; speaking round — each student narrates their complete day including at least one clock time
+- Vocabulary: Daily routine reflexive verbs; basic clock-time expressions
+- Session-end goal: Student can narrate their complete daily routine in 5+ sentences with correct reflexive pronoun placement throughout
 
 ---
 
-### Week 5 — Getting Around
+### Week 5 — Tener, Family, and Possessives
 
-**Session 9 — City Places and Prepositions of Place**
-- Grammar: Prepositions of place: a la derecha, a la izquierda, todo recto, al lado de, enfrente de, cerca de, lejos de, entre, al final de; article contraction: a + el = al, de + el = del; ¿Dónde está...? ¿Cómo llego a...?
-- Speaking: City places vocabulary; giving and following directions using a street map
-- Vocabulary: City places (el aeropuerto, la estación, el banco, la farmacia, el supermercado, el hospital, la oficina de correos, la comisaría, el ayuntamiento)
-- Session-end goal: Student can give and follow directions using prepositions and city vocabulary
+**Session 9 — Tener: Age, Possession, and Expressions**
+- Grammar: Tener — full present: tengo/tienes/tiene/tenemos/tenéis/tienen; irregular yo form (tengo) secured; tener + años for age (not soy/estoy); 5 idiomatic tener expressions (tener hambre, sed, sueño, frío, razón); family vocabulary with mi/tu/su; article contraction al/del introduced in context; city places, prepositions of place, and navigation vocabulary deferred — prepositions formally taught in Week 8 (home/neighborhood context); ir a + infinitivo in Week 9
+- Speaking: Giving age; using tener expressions in real contexts; describing 2 family members with age and mi/tu/su; speaking round — each student gives their age and at least one family description
+- Vocabulary: 8 core family words; tener expressions; mi/tu/su (singular forms)
+- Session-end goal: Student can give their age, use 4–5 tener expressions, and name family members using mi/tu/su
 
-**Session 10 — Transportation and Ir**
-- Grammar: Ir — full present: voy/vas/va/vamos/vais/van; ir a + lugar; transportation: coger/tomar el metro (regional: coger in Spain, tomar widely), ir en tren/en avión/en coche/en autobús/a pie/en bicicleta; buying a ticket: un billete/boleto (regional) de ida / de ida y vuelta
-- Speaking: Navigation scenario in a Spanish city; transportation conversation; regional vocabulary note: billete (Spain) vs. boleto (Latin America)
-- Session-end goal: Student can discuss getting around, use ir + transportation, and navigate a ticket scenario
+**Session 10 — Family Description and Combining Tener/Ser/Estar**
+- Grammar: Possessive adjectives mi/mis, tu/tus, su/sus — agree with the noun not the speaker (mis hermanos not mi hermanos); combining tener + ser + estar in multi-verb family descriptions; time in schedule context (tengo clase a las...); city navigation vocabulary (prepositions of place, ir conjugation, transportation) deferred — prepositions of place taught in Week 8 (home/neighborhood context), ir a + infinitivo in Week 9
+- Speaking: Full family description in 5–6 sentences using tener (age, expressions), ser (identity/profession), estar (location/state); speaking round — every student narrates their family or household
+- Vocabulary: Full family vocabulary (parents, siblings, grandparents, partner); mi/mis, tu/tus, su/sus
+- Session-end goal: Student can give a 5-sentence spoken family description combining tener, ser, and estar with correct possessives
 
 ---
 
@@ -232,9 +236,10 @@ By the end of Spanish A1, students can:
 
 ### Week 12 — Review and Final Performance
 
-**Session 23 — Integrated Role Plays**
-- Focus: All A1 skills in extended scenarios; pronunciation refinement; error analysis
+**Session 23 — Integrated Role Plays and Final Performance Rehearsal**
+- Focus: All A1 skills in extended scenarios; pronunciation refinement; performance preparation
 - Speaking: Combined scenarios: introductions, making plans, ordering food, navigating, shopping, describing home
+- Session-end goal: Student is ready to perform the Part A spoken role play in Session 24; knows the phrase bank is available for reference during Part B
 
 **Session 24 — Final Assessment and A2 Preview**
 - Final performance tasks (see below)
@@ -251,13 +256,13 @@ By the end of Spanish A1, students can:
 | Estar — states, emotions, location | 3 | 4, throughout |
 | Ser vs. estar with meaning-changing adjectives | 4 | 8, 16, 23 |
 | Regular -ar verbs | 5 | 6–24 |
-| Regular -er and -ir verbs | 6 | 7–24 |
-| Reflexive verbs (present) | 6 | 7, 23 |
-| Tener — conjugation and expressions | 8 | 9–24 |
-| Possessive adjectives | 8 | 9–24 |
-| Prepositions of place | 9 | 10, 15 |
-| Ir — conjugation; ir a + lugar | 10 | 17–18 |
-| Article contraction: al / del | 9 | 10–24 |
+| Regular -er and -ir verbs | 7 | 8–24 |
+| Reflexive verbs (present) | 6 (as phrases), 8 (full introduction) | 9, 23 |
+| Tener — conjugation and expressions | 9 | 10–24 |
+| Possessive adjectives | 9 (mi/tu/su), 10 (full plural forms) | 11–24 |
+| Prepositions of place | 15 (home/neighborhood context) | 16, 23 |
+| Ir — conjugation; ir a + infinitivo | 17 | 18, 23 |
+| Article contraction: al / del | 9 (in family/tener context), 15 (fully reinforced with prepositions) | 10–24 |
 | Gustar structure | 11 | 12, 20 |
 | Doler (like gustar) | 21 | 22, 23 |
 | Demonstratives: este/ese series | 13 | 14, 23 |
@@ -403,11 +408,18 @@ A student is ready for A2 when they can:
 
 | Item | Format | Status |
 |---|---|---|
-| Ser vs. estar reference chart | Handout | Not yet created |
-| Meaning-changing adjectives list | Handout | Not yet created |
+| Instructor notes (Weeks 1–12) | Markdown | Complete |
+| Student-facing overviews (Weeks 1–12) | Markdown | Complete |
+| Session slide outlines (Weeks 1–12) | Markdown | Complete |
+| Weekly homework files (Weeks 1–12) | Markdown | Complete |
+| Vocabulary lists (Weeks 1–12) | Markdown | Complete |
+| Formative checks (Weeks 1–12) | Markdown | Complete |
+| Week 12 final performance materials | Markdown | Complete |
+| Ser vs. estar reference chart | Markdown | Complete (reference-ser-vs-estar.md) |
 | Spanish pronunciation guide (Spain + Latin American audio) | Audio + handout | Not yet created |
-| City map for directions activity (Week 5) | Visual / PDF | Not yet created |
+| City map for directions activity | Visual / PDF | Not yet created |
 | Spanish/Latin American restaurant menu | PDF | Not yet created |
 | Market scenario role-play cards | Role-play cards | Not yet created |
-| Vocabulary lists (by week) | PDF | Not yet created |
+| Designed slide decks (Weeks 1–12) | Canva / PowerPoint | Not yet created |
+| Branded student handouts / PDFs | PDF | Not yet created |
 | Assessment rubrics | PDF | Not yet created |

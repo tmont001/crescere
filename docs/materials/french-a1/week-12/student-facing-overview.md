@@ -53,7 +53,7 @@ You may use the Week 12 phrase bank during Part B. You may not read a prepared s
 
 2. **Draft your written message** — write it, read it aloud, then improve it. Check: are the articles correct? Do adjectives agree? Are the contractions right (*au, du*)?
 
-3. **Review the phrase bank** — the Week 12 phrase bank has the most useful expressions from across the course. Spend 10 minutes with it the evening before Session 24.
+3. **Skim the phrase bank** — the Week 12 phrase bank collects the most useful expressions from across the course. Spend 5–10 minutes with it the evening before Session 24 to remind yourself what is in it. You do not need to memorize it. During Part B (written message), you may have it open as a reference — it is a support tool, not a test of what you can recall.
 
 4. **Prepare one or two repair phrases** — know how to say *"I don't know how to say that in French"* and *"Could you repeat that?"* These are not admissions of failure — they are proof that you know how to communicate.
 

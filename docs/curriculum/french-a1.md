@@ -49,7 +49,7 @@ By the end of French A1, students can:
 | 1 | Sounds and greetings | Être; formal/informal register | Pronunciation, introductions, numbers |
 | 2 | Describing yourself and others | Avoir; adjective agreement; nationality | Physical and personality description |
 | 3 | Regular verbs and daily routine | -er verbs; reflexive verbs | Describing a day; time expressions |
-| 4 | Time, dates, and family | Days/months; possessives; tener-equivalent | Telling time; family descriptions |
+| 4 | Reflexive verbs and daily routine | Reflexive verbs; sequencing words; basic clock times | Routine narration in 5–6 sentences |
 | 5 | Getting around | Prepositions of place; aller; transportation | Directions; navigation scenarios |
 | 6 | Food and cafés | Partitive articles; vouloir/je voudrais; gustar-equivalent | Ordering food; café scenarios |
 | 7 | Shopping | Demonstratives; quantities; prices | Shopping dialogues; market scenarios |
@@ -103,27 +103,27 @@ By the end of French A1, students can:
 - Vocabulary: Daily activities vocabulary
 - Session-end goal: Student can produce 8+ -er verb sentences with negation
 
-**Session 6 — -ir and -re Verbs; Reflexive Verbs**
-- Grammar: Regular -ir verbs (finir pattern); regular -re verbs (vendre pattern); reflexive verbs: se lever, se coucher, s'appeler, se laver, se préparer — present tense with reflexive pronouns
-- Speaking: Daily routine narration: Je me lève à sept heures, Je me couche à onze heures...; time expressions integrated
-- Vocabulary: Daily routine vocabulary; time expressions (à quelle heure, le matin, l'après-midi, le soir)
-- Session-end goal: Student can narrate their full daily routine
+**Session 6 — Negation, Frequency, and Daily Routine**
+- Grammar: ne...pas in full practice (spoken French note: ne often dropped); jamais as negation; frequency adverbs (toujours, souvent, quelquefois, jamais, rarement); reflexive verbs introduced as phrases only — *je me lève, je me couche* — full conjugation and reflexive pronoun placement deferred to Week 4
+- Speaking: Daily routine narration in 4–6 sentences using sequencing words and time expressions; ne...pas and jamais in first-person sentences
+- Vocabulary: Sequencing words (d'abord, puis, ensuite, enfin); time-of-day expressions (le matin, l'après-midi, le soir); daily activity vocabulary
+- Session-end goal: Student can narrate their daily routine in 4–6 sentences and use 3–4 frequency expressions
 
 ---
 
-### Week 4 — Time, Dates, and Family
+### Week 4 — Reflexive Verbs and Daily Routine
 
-**Session 7 — Telling Time and Dates**
-- Grammar: Il est + time; 12h vs. 24h format; days of the week (no article with days); months; seasons; C'est + date
-- Speaking: Quelle heure est-il? / Il est... À quelle heure...? Time scenarios (appointments, schedules)
-- Vocabulary: Days, months, seasons; time of day markers
-- Session-end goal: Student can tell time and discuss dates and schedules fluently
+**Session 7 — Reflexive Verbs: Introduction**
+- Grammar: Reflexive verbs — concept and reflexive pronoun table (me/te/se/nous/vous/se); priority forms: je me..., tu te..., il/elle se...; elision before vowels: me + vowel/h muet → m' (je m'appelle, je m'habille — not je me appelle); core verbs: se lever, se coucher, se préparer, s'appeler, se doucher
+- Speaking: First-person routine sentences using reflexive verbs; extend to tu and il/elle forms; speaking round — each student produces at least 3 first-person reflexive routine sentences
+- Vocabulary: Daily routine reflexive verbs (se lever, se coucher, se préparer, se doucher, s'habiller, se laver)
+- Session-end goal: Student can produce first-person reflexive sentences for daily routine with correct pronoun placement — je me, je m' (before vowel)
 
-**Session 8 — Family and Possessives**
-- Grammar: Possessive adjectives: mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs; family vocabulary
-- Speaking: Describing family: J'ai deux frères, Ma sœur s'appelle..., Mes parents habitent à...; family tree descriptions
-- Vocabulary: Family members; marital status; ages
-- Session-end goal: Student can describe their family using possessives accurately
+**Session 8 — Full Routine Narration**
+- Grammar: Reflexive verbs extended to sequenced narration; basic clock times in context (à + heure, il est... heures, vers + heure — 5–6 examples); describing another person's routine with il/elle se...; full time-telling system (half-hours, quarter-hours, 24h format), possessive adjectives, and family vocabulary are deferred
+- Speaking: Complete morning-to-evening routine narration in 5–6 sentences mixing reflexive and -er verbs; at least one clock time included; third-person routine (il/elle se lève à...); speaking round — every student narrates their full day
+- Vocabulary: Sequencing words (d'abord, puis, ensuite, enfin) used with reflexive verbs; basic clock-time expressions (à sept heures, vers midi, le soir)
+- Session-end goal: Student can narrate their complete daily routine in 5+ sentences using reflexive and -er verbs with correct pronoun placement throughout
 
 ---
 
@@ -241,10 +241,10 @@ By the end of French A1, students can:
 
 ### Week 12 — Review and Final Performance
 
-**Session 23 — Integrated Role Plays**
-- Focus: All A1 skills in extended scenarios; pronunciation refinement; error analysis
+**Session 23 — Integrated Role Plays and Final Performance Rehearsal**
+- Focus: All A1 skills in extended scenarios; pronunciation refinement; performance preparation
 - Speaking: Combined scenarios — meeting someone, making a plan, ordering food, navigating the city, shopping, describing home
-- Session-end goal: Student demonstrates A1 fluency across all topic areas
+- Session-end goal: Student is ready to perform the Part A spoken role play in Session 24; knows the phrase bank is available for reference during Part B
 
 **Session 24 — Final Assessment and A2 Preview**
 - Final performance tasks (see below)
@@ -260,8 +260,8 @@ By the end of French A1, students can:
 | Être — present | 1 | 2, 3–24 |
 | Avoir — present | 3 | 4, 8, 16, 21 |
 | Regular -er verbs | 5 | 6–24 |
-| Regular -ir and -re verbs | 6 | 7–24 |
-| Reflexive verbs (present) | 6 | 7, 23 |
+| Regular -ir and -re verbs (finir/vendre pattern) | No dedicated session in Weeks 1–12 — appear via irregular venir and prendre (Session 16) | 23 |
+| Reflexive verbs (present) | 6 (as phrases), 7 (full introduction) | 8, 23 |
 | Adjective agreement (gender + number) | 4 | 5–24 |
 | BAGS adjective placement | 4 | 5–10 |
 | Possessive adjectives | 8 | 9–24 |
@@ -414,11 +414,19 @@ A student is ready for A2 when they can:
 
 | Item | Format | Status |
 |---|---|---|
+| Instructor notes (Weeks 1–12) | Markdown | Complete |
+| Student-facing overviews (Weeks 1–12) | Markdown | Complete |
+| Session slide outlines (Weeks 1–12) | Markdown | Complete |
+| Weekly homework files (Weeks 1–12) | Markdown | Complete |
+| Vocabulary lists (Weeks 1–12) | Markdown | Complete |
+| Formative checks (Weeks 1–12) | Markdown | Complete |
+| Week 12 final performance materials | Markdown | Complete |
 | Pronunciation reference (French sounds) | Handout / PDF | Not yet created |
 | Numbers practice sheet (1–100) | Handout | Not yet created |
 | City map for directions activity (Week 5) | Visual / PDF | Not yet created |
 | French café/restaurant menu | PDF | Not yet created |
 | French market scenario cards | Role-play cards | Not yet created |
 | Home floor plan template | Visual | Not yet created |
-| Vocabulary lists (by week) | PDF | Not yet created |
+| Designed slide decks (Weeks 1–12) | Canva / PowerPoint | Not yet created |
+| Branded student handouts / PDFs | PDF | Not yet created |
 | Assessment rubrics | PDF | Not yet created |
