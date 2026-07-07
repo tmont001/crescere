@@ -8,7 +8,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 
 const variantStyles = {
   default: 'bg-paper border border-line',
-  raised: 'bg-paper-raised border border-line',
+  raised: 'bg-paper-raised border border-line shadow-card-sm',
   sunken: 'bg-paper-sunken border border-line/60',
   outlined: 'bg-transparent border border-line',
 };
@@ -23,7 +23,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
       className={cn(
         'rounded-md transition-all duration-300 ease-editorial',
         variantStyles[variant],
-        interactive && 'hover:-translate-y-0.5 hover:border-ink/30 cursor-pointer',
+        interactive && 'hover:-translate-y-1 hover:shadow-card-lift hover:border-ink/20 cursor-pointer',
         className,
       )}
       {...props}

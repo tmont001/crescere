@@ -25,7 +25,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
           'w-full px-4 py-3 bg-paper-raised border border-line rounded',
           'text-ink placeholder:text-ink-subtle',
           'transition-colors duration-200',
-          'focus:border-ink focus:outline-none focus:ring-0',
+          'focus:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/25 focus-visible:ring-offset-1 focus-visible:ring-offset-paper',
           error && 'border-highlight focus:border-highlight',
           className,
         )}

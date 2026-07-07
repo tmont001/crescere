@@ -50,6 +50,14 @@ const config: Config = {
         md: '8px',
         lg: '12px',
       },
+      boxShadow: {
+        // Elevation using warm navy-tinted shadows (ink: 26 40 71, accent: 61 110 232)
+        'card-sm':    '0 1px 4px -1px rgb(26 40 71 / 0.08), 0 1px 2px rgb(26 40 71 / 0.04)',
+        'card-md':    '0 4px 16px -4px rgb(26 40 71 / 0.12), 0 2px 6px -2px rgb(26 40 71 / 0.06)',
+        'card-lift':  '0 8px 28px -6px rgb(26 40 71 / 0.16), 0 4px 10px -3px rgb(26 40 71 / 0.08)',
+        'card-accent': '0 8px 32px -8px rgb(61 110 232 / 0.22), 0 4px 12px -4px rgb(61 110 232 / 0.10)',
+        'btn-primary': '0 2px 8px -2px rgb(61 110 232 / 0.32), 0 1px 3px -1px rgb(61 110 232 / 0.18)',
+      },
       transitionTimingFunction: {
         editorial: 'cubic-bezier(0.16, 1, 0.3, 1)',
       },

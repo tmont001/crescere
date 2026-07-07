@@ -10,3 +10,6 @@ export { SectionHeader } from './SectionHeader';
 export { ThemeToggle } from './ThemeToggle';
 export { RadioOption } from './RadioOption';
 export { Accordion } from './Accordion';
+export { Reveal } from './Reveal';
+export { StaggerContainer } from './StaggerContainer';
+export { StaggerItem } from './StaggerItem';

@@ -1,5 +1,5 @@
 import { ClipboardCheck, Users, Video, MessageSquareText } from 'lucide-react';
-import { Section, SectionHeader } from '@/components/ui';
+import { Section, SectionHeader, Reveal, StaggerContainer, StaggerItem } from '@/components/ui';
 
 interface Step {
   n: string;
@@ -38,17 +38,24 @@ const STEPS: Step[] = [
 export function HowItWorksSection() {
   return (
     <Section size="md">
-      <SectionHeader
-        eyebrow="How it works"
-        title="A clear path from interested to fluent."
-        description="No ladders of lessons. No app streaks. Just four steps, built for accountability."
-      />
+      <Reveal>
+        <SectionHeader
+          eyebrow="How it works"
+          title="A clear path from interested to fluent."
+          description="No ladders of lessons. No app streaks. Just four steps, built for accountability."
+        />
+      </Reveal>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0">
+      <StaggerContainer
+        className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0"
+        staggerDelay={0.12}
+      >
         {STEPS.map((step, idx) => (
-          <StepItem key={step.n} step={step} isLast={idx === STEPS.length - 1} />
+          <StaggerItem key={step.n}>
+            <StepItem step={step} isLast={idx === STEPS.length - 1} />
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerContainer>
     </Section>
   );
 }
@@ -56,19 +63,32 @@ export function HowItWorksSection() {
 function StepItem({ step, isLast }: { step: Step; isLast: boolean }) {
   const Icon = step.icon;
   return (
-    <div className="relative md:px-6 md:border-r md:border-line md:last:border-r-0 md:first:pl-0">
+    <div className="relative md:px-6 md:border-r md:border-line md:last:border-r-0 md:first:pl-0 overflow-hidden">
+      {/* Ghost step number — decorative, desktop only */}
+      <div
+        aria-hidden
+        className="hidden md:block absolute top-0 right-2 select-none pointer-events-none z-0"
+      >
+        <span className="font-display font-light text-[5.5rem] leading-none text-ink/[0.06]">
+          {step.n}
+        </span>
+      </div>
+
       {/* Connector arrow (desktop only) */}
       {!isLast && (
-        <div className="hidden md:block absolute top-6 right-[-7px] z-10">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-ink-subtle">
-            <path d="M5 3 L9 7 L5 11" stroke="currentColor" strokeWidth="1.25" fill="none" />
-          </svg>
+        <div className="hidden md:block absolute top-6 right-[-9px] z-10">
+          <div className="h-4 w-4 rounded-full bg-paper-raised border border-accent/30 flex items-center justify-center">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="text-accent">
+              <path d="M2 1L6 4L2 7" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
         </div>
       )}
 
-      <div className="flex items-start gap-4 md:flex-col md:gap-0">
+      <div className="relative z-10 flex items-start gap-4 md:flex-col md:gap-0">
         <div className="shrink-0 md:mb-8">
-          <div className="h-12 w-12 rounded-full border border-line bg-paper-raised flex items-center justify-center">
+          {/* Filled icon container — no border, accent-soft background */}
+          <div className="h-12 w-12 rounded-full bg-accent-soft flex items-center justify-center">
             <Icon size={20} strokeWidth={1.25} className="text-accent" />
           </div>
         </div>

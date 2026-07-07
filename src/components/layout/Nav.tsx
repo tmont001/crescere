@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Logo } from './Logo';
 import { ButtonLink, ThemeToggle } from '@/components/ui';
 import { cn } from '@/lib/cn';
@@ -21,6 +22,7 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const prefersReduced = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -81,33 +83,41 @@ export function Nav() {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden border-t border-line bg-paper">
-          <nav className="container-editorial py-6 flex flex-col gap-4">
-            {NAV_ITEMS.map((item) => (
-              <NavLink
-                key={item.href}
-                to={item.href}
-                className={({ isActive }) =>
-                  cn(
-                    'text-base font-medium py-1',
-                    isActive ? 'text-ink' : 'text-ink-muted',
-                  )
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
-            <div className="flex items-center gap-3 pt-4">
-              <ButtonLink to="/enroll" size="md" fullWidth>
-                Express Interest
-              </ButtonLink>
-              <ThemeToggle />
-            </div>
-          </nav>
-        </div>
-      )}
+      {/* Mobile menu — animated */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            className="md:hidden border-t border-line bg-paper"
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: prefersReduced ? 0 : 0.2, ease: 'easeOut' }}
+          >
+            <nav className="container-editorial py-6 flex flex-col gap-4">
+              {NAV_ITEMS.map((item) => (
+                <NavLink
+                  key={item.href}
+                  to={item.href}
+                  className={({ isActive }) =>
+                    cn(
+                      'text-base font-medium py-1',
+                      isActive ? 'text-ink' : 'text-ink-muted',
+                    )
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              ))}
+              <div className="flex items-center gap-3 pt-4">
+                <ButtonLink to="/enroll" size="md" fullWidth>
+                  Express Interest
+                </ButtonLink>
+                <ThemeToggle />
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
