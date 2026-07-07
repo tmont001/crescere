@@ -10,7 +10,7 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 const variantStyles = {
   default: 'bg-paper-sunken text-ink',
   accent: 'bg-accent-soft text-accent',
-  highlight: 'bg-highlight-soft text-highlight',
+  highlight: 'bg-highlight-soft text-ink',
   outline: 'bg-transparent border border-line text-ink-muted',
 };
 

@@ -17,8 +17,8 @@ const variants: Record<RevealVariant, Variants> = {
     visible: { opacity: 1, y: 0 },
   },
   blur: {
-    hidden: { opacity: 0, filter: 'blur(8px)', scale: 0.98 },
-    visible: { opacity: 1, filter: 'blur(0px)', scale: 1 },
+    hidden: { opacity: 0, y: 24, filter: 'blur(8px)', scale: 0.98 },
+    visible: { opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 },
   },
   fade: {
     hidden: { opacity: 0 },

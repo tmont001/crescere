@@ -60,13 +60,13 @@ const FEATURES: Feature[] = [
 
 const iconContainerClass: Record<IconVariant, string> = {
   accent: 'bg-accent-soft text-accent',
-  highlight: 'bg-highlight-soft text-highlight',
+  highlight: 'bg-highlight-soft text-ink',
 };
 
 export function WhatYouGetSection() {
   return (
     <Section variant="sunken" size="md">
-      <Reveal>
+      <Reveal variant="blur">
         <SectionHeader
           eyebrow="What you get"
           title={
@@ -100,8 +100,8 @@ function FeatureTile({
   return (
     <motion.div
       className="bg-paper p-8 flex flex-col gap-4 hover:bg-paper-raised transition-colors duration-300"
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: prefersReduced ? 1 : 0, y: prefersReduced ? 0 : 16, filter: prefersReduced ? 'blur(0px)' : 'blur(5px)' }}
+      whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{
         duration: prefersReduced ? 0 : 0.5,

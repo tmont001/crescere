@@ -84,16 +84,21 @@ export function CohortUrgencySection() {
                 idx !== cohorts.length - 1 && 'border-b border-line',
               )}
             >
-              {/* Flag */}
+              {/* Language */}
               <div className="col-span-12 md:col-span-1 flex items-center gap-3">
                 <span
                   className={cn(
-                    'h-8 w-8 rounded flex items-center justify-center text-base',
-                    cohort.language === 'french' ? 'bg-accent-soft text-accent' : 'bg-highlight-soft text-highlight',
+                    'inline-flex items-center gap-1.5 pl-2 pr-2.5 py-1 rounded text-xs font-medium border',
+                    cohort.language === 'french'
+                      ? 'text-accent bg-accent-soft border-accent/25'
+                      : 'text-ink-muted bg-paper-raised border-line',
                   )}
-                  aria-hidden
                 >
-                  {cohort.language === 'french' ? '🇫🇷' : '🇪🇸'}
+                  <span
+                    className={cn('h-2.5 w-0.5 rounded-full shrink-0', cohort.language === 'french' ? 'bg-accent' : 'bg-ink/30')}
+                    aria-hidden
+                  />
+                  {cohort.language === 'french' ? 'French' : 'Spanish'}
                 </span>
                 <Badge variant="outline" size="sm" className="md:hidden">
                   {cohort.level}

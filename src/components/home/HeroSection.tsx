@@ -169,13 +169,13 @@ function BrandPanel() {
 
           {/* Language pills */}
           <div className="flex items-center gap-2 mb-6">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-accent-soft rounded">
-              <span aria-hidden>🇫🇷</span>
+            <div className="flex items-center gap-1.5 pl-2.5 pr-3 py-1.5 bg-accent-soft border border-accent/25 rounded">
+              <span className="h-3 w-0.5 rounded-full bg-accent shrink-0" aria-hidden />
               <span className="text-accent font-medium text-xs">French</span>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-highlight-soft rounded">
-              <span aria-hidden>🇪🇸</span>
-              <span className="text-highlight font-medium text-xs">Spanish</span>
+            <div className="flex items-center gap-1.5 pl-2.5 pr-3 py-1.5 bg-paper border border-line rounded">
+              <span className="h-3 w-0.5 rounded-full bg-ink/30 shrink-0" aria-hidden />
+              <span className="text-ink-muted font-medium text-xs">Spanish</span>
             </div>
           </div>
 

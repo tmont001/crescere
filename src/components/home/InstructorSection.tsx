@@ -24,35 +24,33 @@ export function InstructorSection() {
       <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Photo column */}
         <Reveal variant="blur" className="lg:col-span-4">
-          <div className="relative max-w-xs mx-auto lg:mx-0">
-            {/* Offset accent frame behind the photo */}
-            <div
-              aria-hidden
-              className="absolute rounded-md bg-accent-soft"
-              style={{ inset: 0, transform: 'translate(10px, 10px)' }}
-            />
+          <div className="max-w-xs mx-auto lg:mx-0">
+            <div className="relative">
+              {/* Offset accent frame behind the photo */}
+              <div
+                aria-hidden
+                className="absolute rounded-md bg-accent-soft"
+                style={{ inset: 0, transform: 'translate(10px, 10px)' }}
+              />
 
-            {/* Photo */}
-            <img
-              src="/images/thomas-montanaro-headshot.jpg"
-              alt="Thomas Montanaro, founder and instructor of Crescere"
-              className="relative w-full rounded-md object-cover object-top"
-              style={{
-                aspectRatio: '4/5',
-                maxHeight: '480px',
-                boxShadow:
-                  '0 8px 28px -6px rgb(26 40 71 / 0.20), 0 4px 10px -3px rgb(26 40 71 / 0.12)',
-              }}
-            />
+              {/* Photo */}
+              <img
+                src="/images/thomas-montanaro-headshot.jpg"
+                alt="Thomas Montanaro, founder and instructor of Crescere"
+                className="relative w-full rounded-md object-cover object-top"
+                style={{
+                  aspectRatio: '4/5',
+                  maxHeight: '480px',
+                  boxShadow:
+                    '0 8px 28px -6px rgb(26 40 71 / 0.20), 0 4px 10px -3px rgb(26 40 71 / 0.12)',
+                }}
+              />
+            </div>
 
-            {/* Credential badge overlay */}
-            <div className="absolute bottom-0 left-0 right-0 mx-3 mb-3 bg-paper/92 backdrop-blur-sm border border-line/60 rounded px-4 py-3">
-              <p className="eyebrow text-ink-subtle mb-0.5" style={{ fontSize: '0.5rem' }}>
-                Certified Instructor · M.S.T.
-              </p>
-              <p className="font-display text-sm text-ink leading-tight">
-                NYS French &amp; Spanish · 15+ years experience
-              </p>
+            {/* Below-photo attribution */}
+            <div className="mt-5">
+              <p className="font-display text-base text-ink leading-tight">Thomas Montanaro, M.S.T.</p>
+              <p className="text-sm text-ink-muted mt-0.5">Founder & Instructor</p>
             </div>
           </div>
         </Reveal>

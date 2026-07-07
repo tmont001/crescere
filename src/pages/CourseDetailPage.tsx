@@ -31,15 +31,23 @@ export function CourseDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-2xl" aria-hidden>
-                {course.language === 'french' ? '🇫🇷' : '🇪🇸'}
+              <span
+                className={cn(
+                  'inline-flex items-center gap-1.5 pl-2 pr-2.5 py-1 rounded text-xs font-medium border',
+                  course.language === 'french'
+                    ? 'text-accent bg-accent-soft border-accent/25'
+                    : 'text-ink-muted bg-paper-raised border-line',
+                )}
+              >
+                <span
+                  className={cn('h-2.5 w-0.5 rounded-full shrink-0', course.language === 'french' ? 'bg-accent' : 'bg-ink/30')}
+                  aria-hidden
+                />
+                {course.language === 'french' ? 'French' : 'Spanish'}
               </span>
               <Badge variant="accent" size="md">
                 Level {course.level}
               </Badge>
-              <span className="text-2xs uppercase tracking-wider text-ink-subtle">
-                {course.language === 'french' ? 'French' : 'Spanish'}
-              </span>
             </div>
 
             <h1 className="display-1 text-ink mb-8">{course.outcome}</h1>

@@ -15,7 +15,7 @@ export function FinalCTASection() {
       />
 
       <div className="max-w-3xl mx-auto text-center relative">
-        <Reveal>
+        <Reveal variant="blur">
           {/* Decorative marks */}
           <div className="mb-10 flex justify-center items-center gap-3" aria-hidden>
             <span className="h-px w-12 bg-line" />
@@ -30,7 +30,7 @@ export function FinalCTASection() {
           </h2>
         </Reveal>
 
-        <Reveal delay={0.12}>
+        <Reveal variant="blur" delay={0.12}>
           <p className="mt-8 text-lg md:text-xl text-ink-muted leading-relaxed max-w-xl mx-auto">
             Take the placement test and get a clear recommendation based on your current level. Five minutes, no login required.
           </p>

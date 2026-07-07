@@ -40,7 +40,7 @@ const CREDIBILITY_POINTS: CredibilityPoint[] = [
 
 const iconContainerClass: Record<IconVariant, string> = {
   accent: 'bg-accent-soft text-accent',
-  highlight: 'bg-highlight-soft text-highlight',
+  highlight: 'bg-highlight-soft text-ink',
 };
 
 export function SocialProofSection() {
@@ -56,7 +56,7 @@ export function SocialProofSection() {
         }}
       />
 
-      <Reveal>
+      <Reveal variant="blur">
         <SectionHeader
           eyebrow="Why Crescere"
           title={

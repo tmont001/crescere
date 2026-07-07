@@ -38,7 +38,7 @@ const STEPS: Step[] = [
 export function HowItWorksSection() {
   return (
     <Section size="md">
-      <Reveal>
+      <Reveal variant="blur">
         <SectionHeader
           eyebrow="How it works"
           title="A clear path from interested to fluent."
@@ -47,12 +47,12 @@ export function HowItWorksSection() {
       </Reveal>
 
       <StaggerContainer
-        className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-0"
-        staggerDelay={0.12}
+        className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-4"
+        staggerDelay={0.1}
       >
-        {STEPS.map((step, idx) => (
+        {STEPS.map((step) => (
           <StaggerItem key={step.n}>
-            <StepItem step={step} isLast={idx === STEPS.length - 1} />
+            <StepCard step={step} />
           </StaggerItem>
         ))}
       </StaggerContainer>
@@ -60,45 +60,24 @@ export function HowItWorksSection() {
   );
 }
 
-function StepItem({ step, isLast }: { step: Step; isLast: boolean }) {
+function StepCard({ step }: { step: Step }) {
   const Icon = step.icon;
   return (
-    <div className="relative md:px-6 md:border-r md:border-line md:last:border-r-0 md:first:pl-0 overflow-hidden">
-      {/* Ghost step number — decorative, desktop only */}
-      <div
-        aria-hidden
-        className="hidden md:block absolute top-0 right-2 select-none pointer-events-none z-0"
-      >
-        <span className="font-display font-light text-[5.5rem] leading-none text-ink/[0.06]">
-          {step.n}
-        </span>
+    <div className="flex flex-col gap-5 p-7 bg-paper-raised border border-line rounded-md h-full shadow-card-sm">
+      {/* Top row: icon left, step number right */}
+      <div className="flex items-start justify-between">
+        <div className="h-11 w-11 rounded-md bg-accent-soft flex items-center justify-center shrink-0">
+          <Icon size={20} strokeWidth={1.25} className="text-accent" />
+        </div>
+        <span className="font-mono text-xs font-semibold text-ink-subtle">{step.n}</span>
       </div>
 
-      {/* Connector arrow (desktop only) */}
-      {!isLast && (
-        <div className="hidden md:block absolute top-6 right-[-9px] z-10">
-          <div className="h-4 w-4 rounded-full bg-paper-raised border border-accent/30 flex items-center justify-center">
-            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="text-accent">
-              <path d="M2 1L6 4L2 7" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-        </div>
-      )}
-
-      <div className="relative z-10 flex items-start gap-4 md:flex-col md:gap-0">
-        <div className="shrink-0 md:mb-8">
-          {/* Filled icon container — no border, accent-soft background */}
-          <div className="h-12 w-12 rounded-full bg-accent-soft flex items-center justify-center">
-            <Icon size={20} strokeWidth={1.25} className="text-accent" />
-          </div>
-        </div>
-        <div className="md:mt-0">
-          <p className="font-mono text-2xs uppercase tracking-widest text-ink-subtle tabular mb-3">
-            Step {step.n}
-          </p>
-          <h3 className="font-display text-xl md:text-2xl text-ink leading-tight mb-2">{step.title}</h3>
-          <p className="text-[0.9375rem] text-ink-muted leading-relaxed">{step.description}</p>
-        </div>
+      {/* Content */}
+      <div>
+        <h3 className="font-display text-xl md:text-[1.25rem] text-ink leading-tight mb-2">
+          {step.title}
+        </h3>
+        <p className="text-[0.9375rem] text-ink-muted leading-relaxed">{step.description}</p>
       </div>
     </div>
   );

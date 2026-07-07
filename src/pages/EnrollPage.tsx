@@ -155,10 +155,7 @@ export function EnrollPage() {
                             : 'border-line bg-paper-raised hover:border-ink/30',
                         )}
                       >
-                        <span className="col-span-1 text-xl" aria-hidden>
-                          {cohort.language === 'french' ? '🇫🇷' : '🇪🇸'}
-                        </span>
-                        <div className="col-span-7">
+                        <div className="col-span-8">
                           <div className="flex items-center gap-2 mb-1">
                             <Badge variant={selected ? 'accent' : 'outline'} size="sm">
                               {cohort.level}
@@ -193,26 +190,21 @@ export function EnrollPage() {
                         type="button"
                         onClick={() => setSelectedId(course.id)}
                         className={cn(
-                          'w-full grid grid-cols-12 gap-3 items-center p-5 text-left rounded border transition-all',
+                          'w-full p-5 text-left rounded border transition-all',
                           selected
                             ? 'border-accent bg-accent-soft'
                             : 'border-line bg-paper-raised hover:border-ink/30',
                         )}
                       >
-                        <span className="col-span-1 text-xl" aria-hidden>
-                          {course.language === 'french' ? '🇫🇷' : '🇪🇸'}
-                        </span>
-                        <div className="col-span-11">
-                          <div className="flex items-center gap-2 mb-1">
-                            <Badge variant={selected ? 'accent' : 'outline'} size="sm">
-                              {course.level}
-                            </Badge>
-                            <span className="text-2xs uppercase tracking-wider text-ink-subtle">
-                              {course.language === 'french' ? 'French' : 'Spanish'}
-                            </span>
-                          </div>
-                          <p className="font-display text-lg text-ink leading-tight">{course.outcome}</p>
+                        <div className="flex items-center gap-2 mb-1">
+                          <Badge variant={selected ? 'accent' : 'outline'} size="sm">
+                            {course.level}
+                          </Badge>
+                          <span className="text-2xs uppercase tracking-wider text-ink-subtle">
+                            {course.language === 'french' ? 'French' : 'Spanish'}
+                          </span>
                         </div>
+                        <p className="font-display text-lg text-ink leading-tight">{course.outcome}</p>
                       </button>
                     );
                   })}

@@ -14,7 +14,7 @@ export function PricingSection() {
   return (
     <Section size="md" variant="default">
       <div className="max-w-3xl mx-auto">
-        <Reveal>
+        <Reveal variant="blur">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-5">
               <span className="h-px w-6 bg-accent" aria-hidden />
