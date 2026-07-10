@@ -6,6 +6,7 @@ interface StaggerContainerProps {
   className?: string;
   delay?: number;
   staggerDelay?: number;
+  once?: boolean;
 }
 
 export function StaggerContainer({
@@ -13,6 +14,7 @@ export function StaggerContainer({
   className,
   delay = 0,
   staggerDelay = 0.1,
+  once = false,
 }: StaggerContainerProps) {
   const prefersReduced = useReducedMotion();
 
@@ -21,7 +23,7 @@ export function StaggerContainer({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-80px' }}
+      viewport={{ once, amount: 0.1 }}
       variants={{
         hidden: {},
         visible: {

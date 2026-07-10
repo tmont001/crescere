@@ -9,6 +9,7 @@ interface RevealProps {
   delay?: number;
   duration?: number;
   className?: string;
+  once?: boolean;
 }
 
 const variants: Record<RevealVariant, Variants> = {
@@ -17,7 +18,7 @@ const variants: Record<RevealVariant, Variants> = {
     visible: { opacity: 1, y: 0 },
   },
   blur: {
-    hidden: { opacity: 0, y: 24, filter: 'blur(8px)', scale: 0.98 },
+    hidden: { opacity: 0, y: 28, filter: 'blur(10px)', scale: 0.975 },
     visible: { opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 },
   },
   fade: {
@@ -30,8 +31,9 @@ export function Reveal({
   children,
   variant = 'fade-up',
   delay = 0,
-  duration = 0.55,
+  duration = 0.7,
   className,
+  once = false,
 }: RevealProps) {
   const prefersReduced = useReducedMotion();
 
@@ -40,7 +42,7 @@ export function Reveal({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-80px' }}
+      viewport={{ once, amount: 0.1 }}
       variants={variants[variant]}
       transition={{
         duration: prefersReduced ? 0 : duration,

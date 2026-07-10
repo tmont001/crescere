@@ -13,3 +13,4 @@ export { Accordion } from './Accordion';
 export { Reveal } from './Reveal';
 export { StaggerContainer } from './StaggerContainer';
 export { StaggerItem } from './StaggerItem';
+export { LanguageFlagTile } from './LanguageFlagTile';

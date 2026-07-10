@@ -1,9 +1,8 @@
 import { ArrowRight, CalendarDays } from 'lucide-react';
-import { Section, SectionHeader, ButtonLink } from '@/components/ui';
+import { Section, SectionHeader, ButtonLink, Badge, LanguageFlagTile } from '@/components/ui';
 import { getUpcomingCohorts } from '@/data/cohorts';
 import { getCourseById } from '@/data/courses';
 import { formatCohortDate, daysUntil } from '@/lib/dates';
-import { Badge } from '@/components/ui';
 import { cn } from '@/lib/cn';
 
 export function CohortUrgencySection() {
@@ -88,16 +87,13 @@ export function CohortUrgencySection() {
               <div className="col-span-12 md:col-span-1 flex items-center gap-3">
                 <span
                   className={cn(
-                    'inline-flex items-center gap-1.5 pl-2 pr-2.5 py-1 rounded text-xs font-medium border',
+                    'inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-1 rounded text-xs font-medium border',
                     cohort.language === 'french'
                       ? 'text-accent bg-accent-soft border-accent/25'
                       : 'text-ink-muted bg-paper-raised border-line',
                   )}
                 >
-                  <span
-                    className={cn('h-2.5 w-0.5 rounded-full shrink-0', cohort.language === 'french' ? 'bg-accent' : 'bg-ink/30')}
-                    aria-hidden
-                  />
+                  <LanguageFlagTile language={cohort.language as 'french' | 'spanish'} size="sm" />
                   {cohort.language === 'french' ? 'French' : 'Spanish'}
                 </span>
                 <Badge variant="outline" size="sm" className="md:hidden">

@@ -1,6 +1,6 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CalendarDays, Check, Clock, GraduationCap, Users } from 'lucide-react';
-import { Section, Card, Badge, ButtonLink } from '@/components/ui';
+import { Section, Card, Badge, ButtonLink, LanguageFlagTile } from '@/components/ui';
 import { getCourseById } from '@/data/courses';
 import { getNextCohortForCourse, COHORTS } from '@/data/cohorts';
 import { formatCohortDate, daysUntil } from '@/lib/dates';
@@ -33,16 +33,13 @@ export function CourseDetailPage() {
             <div className="flex items-center gap-3 mb-6">
               <span
                 className={cn(
-                  'inline-flex items-center gap-1.5 pl-2 pr-2.5 py-1 rounded text-xs font-medium border',
+                  'inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-1 rounded text-xs font-medium border',
                   course.language === 'french'
                     ? 'text-accent bg-accent-soft border-accent/25'
                     : 'text-ink-muted bg-paper-raised border-line',
                 )}
               >
-                <span
-                  className={cn('h-2.5 w-0.5 rounded-full shrink-0', course.language === 'french' ? 'bg-accent' : 'bg-ink/30')}
-                  aria-hidden
-                />
+                <LanguageFlagTile language={course.language as 'french' | 'spanish'} size="sm" />
                 {course.language === 'french' ? 'French' : 'Spanish'}
               </span>
               <Badge variant="accent" size="md">

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, CalendarDays } from 'lucide-react';
-import { Section, SectionHeader, Card, Badge, ButtonLink } from '@/components/ui';
+import { Section, SectionHeader, Card, Badge, ButtonLink, LanguageFlagTile } from '@/components/ui';
 import { COURSES } from '@/data/courses';
 import { getNextCohortForCourse } from '@/data/cohorts';
 import { formatCohortDate } from '@/lib/dates';
@@ -27,8 +27,8 @@ export function CoursesPage() {
       </Section>
 
       <Section size="sm" variant="sunken">
-        <div className="mb-8 flex items-center gap-4">
-          <span className="h-8 w-1 rounded-full bg-accent shrink-0" aria-hidden />
+        <div className="mb-8 flex items-center gap-3">
+          <LanguageFlagTile language="french" size="lg" />
           <h2 className="display-3 text-ink">French</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -39,8 +39,8 @@ export function CoursesPage() {
       </Section>
 
       <Section size="sm" variant="default">
-        <div className="mb-8 flex items-center gap-4">
-          <span className="h-8 w-1 rounded-full bg-ink/25 shrink-0" aria-hidden />
+        <div className="mb-8 flex items-center gap-3">
+          <LanguageFlagTile language="spanish" size="lg" />
           <h2 className="display-3 text-ink">Spanish</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

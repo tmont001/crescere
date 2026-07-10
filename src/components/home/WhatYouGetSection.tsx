@@ -100,9 +100,9 @@ function FeatureTile({
   return (
     <motion.div
       className="bg-paper p-8 flex flex-col gap-4 hover:bg-paper-raised transition-colors duration-300"
-      initial={{ opacity: prefersReduced ? 1 : 0, y: prefersReduced ? 0 : 16, filter: prefersReduced ? 'blur(0px)' : 'blur(5px)' }}
+      initial={{ opacity: prefersReduced ? 1 : 0, y: prefersReduced ? 0 : 16, filter: prefersReduced ? 'blur(0px)' : 'blur(8px)' }}
       whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-      viewport={{ once: true, margin: '-80px' }}
+      viewport={{ once: false, amount: 0.1 }}
       transition={{
         duration: prefersReduced ? 0 : 0.5,
         delay: prefersReduced ? 0 : index * 0.08,

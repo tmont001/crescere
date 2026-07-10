@@ -16,7 +16,7 @@ export function StaggerItem({ children, className }: StaggerItemProps) {
         hidden: {
           opacity: prefersReduced ? 1 : 0,
           y: prefersReduced ? 0 : 20,
-          filter: prefersReduced ? 'blur(0px)' : 'blur(5px)',
+          filter: prefersReduced ? 'blur(0px)' : 'blur(8px)',
         },
         visible: {
           opacity: 1,
